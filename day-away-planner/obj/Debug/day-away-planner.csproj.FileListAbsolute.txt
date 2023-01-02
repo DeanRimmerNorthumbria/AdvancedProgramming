@@ -34,3 +34,5 @@ C:\Users\Dean\Source\Repos\AdvancedProgramming\day-away-planner\obj\Debug\day-aw
 C:\Users\Dean\Source\Repos\AdvancedProgramming\day-away-planner\obj\Debug\day-away-planner.csproj.CopyComplete
 C:\Users\Dean\Source\Repos\AdvancedProgramming\day-away-planner\obj\Debug\day-away-planner.exe
 C:\Users\Dean\Source\Repos\AdvancedProgramming\day-away-planner\obj\Debug\day-away-planner.pdb
+C:\Users\Dean\source\repos\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Main.resources
+C:\Users\Dean\source\repos\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Views.Venue.resources

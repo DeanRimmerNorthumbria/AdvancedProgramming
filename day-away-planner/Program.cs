@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using day_away_planner.Models;
+using day_away_planner.Views;
 
 namespace day_away_planner
 {
@@ -16,24 +17,9 @@ namespace day_away_planner
         [STAThread]
         static void Main(String[] args)
         {
-            using (var context = new MyDBEntities())
-            {
-
-                //var venueList = context.Venues.ToList<Venue>();
-                //Venue a = new Venue();
-                //a.VenueName = "Test";
-                //a.VenueCost = 1;
-                //a.VenueLocation = "animal3";
-                //Console.WriteLine(a.VenueLocation);
-                //context.Venues.Add(a);
-                //context.SaveChanges();
-
-            }
-
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Main());
         }
     }
 }

@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\day-away-planner",
+    "\\packages",
+    "\\packages\\EntityFramework.6.4.4"
   ],
-  "SelectedNode": "\\C:\\Users\\Dean\\Source\\Repos\\AdvancedProgramming",
+  "SelectedNode": "\\day-away-planner.sln",
   "PreviewInSolutionExplorer": false
 }
