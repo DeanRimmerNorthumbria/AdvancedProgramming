@@ -18,21 +18,6 @@ namespace day_away_planner
         [STAThread]
         static void Main(String[] args)
         {
-            using (var context = new MyDBEntities())
-            {
-
-                var venueList = context.Clients.ToList<Client>();
-                Client a = new Client();
-                a.ClientName = "Test";
-                a.ClientDepartment = "a";
-                a.ClientDebt = 1.22;
-                a.ClientArrears = false;
-                a.ClientCompany = "b";
-                context.Clients.Add(a);
-                context.SaveChanges();
-
-            }
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Main());
