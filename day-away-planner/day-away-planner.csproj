@@ -73,7 +73,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Client.cs" />
+    <Compile Include="Presenter\Client.cs" />
     <Compile Include="Presenter\Venue.cs" />
+    <Compile Include="Views\Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Client.Designer.cs">
+      <DependentUpon>Client.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +103,9 @@
     <Compile Include="Views\Venue.Designer.cs">
       <DependentUpon>Venue.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\Client.resx">
+      <DependentUpon>Client.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>

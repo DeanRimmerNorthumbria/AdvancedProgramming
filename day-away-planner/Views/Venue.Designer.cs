@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.venueGridView = new System.Windows.Forms.DataGridView();
-            this.venueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.back = new System.Windows.Forms.Button();
+            this.venueBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.venueGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.venueBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -43,22 +43,24 @@
             this.venueGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.venueGridView.Location = new System.Drawing.Point(12, 12);
             this.venueGridView.Name = "venueGridView";
+            this.venueGridView.ReadOnly = true;
             this.venueGridView.Size = new System.Drawing.Size(776, 411);
             this.venueGridView.TabIndex = 0;
-            // 
-            // venueBindingSource
-            // 
-            this.venueBindingSource.DataSource = typeof(day_away_planner.Presenter.Venue);
+            this.venueGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.venueGridView_CellContentClick);
             // 
             // back
             // 
-            this.back.Location = new System.Drawing.Point(40, 457);
+            this.back.Location = new System.Drawing.Point(12, 440);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(75, 23);
             this.back.TabIndex = 1;
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = true;
             this.back.Click += new System.EventHandler(this.back_Click);
+            // 
+            // venueBindingSource
+            // 
+            this.venueBindingSource.DataSource = typeof(day_away_planner.Presenter.Venue);
             // 
             // Venue
             // 

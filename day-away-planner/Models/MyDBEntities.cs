@@ -14,6 +14,7 @@ namespace day_away_planner.Models
             //Database.SetInitializer(new MigrateDatabaseToLatestVersion<MyDBEntities>);
         }
         public DbSet<Venue> Venues { get; set; }
+        public DbSet<Client> Clients { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder) { base.OnModelCreating(modelBuilder); }
     }
 }

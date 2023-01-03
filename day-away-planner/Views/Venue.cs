@@ -30,5 +30,10 @@ namespace day_away_planner.Views
             main.Show();
             this.Close();
         }
+
+        private void venueGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
