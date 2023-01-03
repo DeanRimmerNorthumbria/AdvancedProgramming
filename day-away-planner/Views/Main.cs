@@ -23,14 +23,14 @@ namespace day_away_planner
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void venueButton_Click(object sender, EventArgs e)
         {
             Views.Venue venue = new Views.Venue();
             venue.Show();
             this.Hide();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void clientButton_Click(object sender, EventArgs e)
         {
             Views.Client client = new Views.Client();
             client.Show();

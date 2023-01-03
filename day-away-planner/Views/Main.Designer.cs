@@ -40,7 +40,7 @@
             this.venueButton.TabIndex = 0;
             this.venueButton.Text = "Venues";
             this.venueButton.UseVisualStyleBackColor = true;
-            this.venueButton.Click += new System.EventHandler(this.button1_Click);
+            this.venueButton.Click += new System.EventHandler(this.venueButton_Click);
             // 
             // clientButton
             // 
@@ -50,7 +50,7 @@
             this.clientButton.TabIndex = 1;
             this.clientButton.Text = "Clients";
             this.clientButton.UseVisualStyleBackColor = true;
-            this.clientButton.Click += new System.EventHandler(this.button2_Click);
+            this.clientButton.Click += new System.EventHandler(this.clientButton_Click);
             // 
             // Main
             // 
