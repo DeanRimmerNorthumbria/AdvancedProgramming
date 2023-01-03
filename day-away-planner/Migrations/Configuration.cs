@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace day_away_planner.Migrations
 {
@@ -28,10 +29,27 @@ namespace day_away_planner.Migrations
                 new Venue() { VenueID = 107, VenueName = "Mayfair Suite", VenueCost = 564.23, VenueLocation = "Park Lane, Sandwell B21 8LE", VenueCapacity = 231, VenueExtras = "Optional Overnight Stay" },
                 new Venue() { VenueID = 108, VenueName = "Pennard House", VenueCost = 241.23, VenueLocation = "East Pennard, Shepton Mallet BA4 6TP", VenueCapacity = 111, VenueExtras = "Optinal Morning Breakfast" },
                 new Venue() { VenueID = 109, VenueName = "The Laverton", VenueCost = 661.23, VenueLocation = "The Laverton Bratton Rd, Westbury BA13 3EN", VenueCapacity = 123, VenueExtras = "Optional Upcycling Workshop" }
-
             );
-            //  This method will be called after migrating to the latest version.
 
+            context.Clients.AddOrUpdate(x => x.ClientID,
+                new Client() {ClientID = 1, ClientName = "Bob Test", ClientDepartment = "Sales", ClientCompany = "Bloom Marketing", ClientDebt = 0, ClientArrears = false},
+                new Client() {ClientID = 2, ClientName = "Kayley Vail", ClientDepartment = "Marketing", ClientCompany = "Bloom Marketing", ClientDebt = 0, ClientArrears = false},
+                new Client() { ClientID = 3, ClientName = "Frank Carrington", ClientDepartment = "Accounting", ClientCompany = "Hearty Pancake", ClientDebt = 233.45, ClientArrears = false },
+                new Client() { ClientID = 4, ClientName = "Clayton Wynn", ClientDepartment = "Sales", ClientCompany = "The Auto DNA", ClientDebt = 0, ClientArrears = false },
+                new Client() { ClientID = 5, ClientName = "Temple Raleigh", ClientDepartment = "Accounting", ClientCompany = "Urban Philosophy", ClientDebt = 233.45, ClientArrears = false },
+                new Client() { ClientID = 6, ClientName = "Skyler Cam", ClientDepartment = "Marketing", ClientCompany = "Gourmet Sandwich", ClientDebt = 0, ClientArrears = false },
+                new Client() { ClientID = 7, ClientName = "Tegan Spencer", ClientDepartment = "Accounting", ClientCompany = "Office Tile", ClientDebt = 0, ClientArrears = false },
+                new Client() { ClientID = 8, ClientName = "Ansley Christan", ClientDepartment = "Marketing", ClientCompany = "The Crunchy Croissant", ClientDebt = 0, ClientArrears = false },
+                new Client() { ClientID = 9, ClientName = "Brice Ken", ClientDepartment = "Sales", ClientCompany = "Smart Phone Repair", ClientDebt = 0, ClientArrears = false },
+                new Client() { ClientID = 10, ClientName = "Kimberley Raleigh", ClientDepartment = "Sales", ClientCompany = "Ready Continental", ClientDebt = 0, ClientArrears = false },
+                new Client() { ClientID = 11, ClientName = "Piper Kit", ClientDepartment = "Accounting", ClientCompany = "Service Scientist", ClientDebt = 233.45, ClientArrears = false },
+                new Client() { ClientID = 12, ClientName = "Avery Page", ClientDepartment = "Marketing", ClientCompany = "House Brush", ClientDebt = 0, ClientArrears = false },
+                new Client() { ClientID = 13, ClientName = "Linsey Ainslee", ClientDepartment = "Accounting", ClientCompany = "Office Brush", ClientDebt = 0, ClientArrears = false },
+                new Client() { ClientID = 14, ClientName = "Halley Kim", ClientDepartment = "Sales", ClientCompany = "Brew Bean", ClientDebt = 0, ClientArrears = false },
+                new Client() { ClientID = 15, ClientName = "Jeanelle Caine", ClientDepartment = "Marketing", ClientCompany = "Trendy Scissor", ClientDebt = 233.45, ClientArrears = false }
+            );
+
+            //  This method will be called after migrating to the latest version.
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method
             //  to avoid creating duplicate seed data.
         }

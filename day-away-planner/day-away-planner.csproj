@@ -73,6 +73,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Client.cs" />
     <Compile Include="Presenter\Venue.cs" />
     <Compile Include="Views\Main.cs">
       <SubType>Form</SubType>
