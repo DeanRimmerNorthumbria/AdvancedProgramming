@@ -2,9 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\day-away-planner",
-    "\\packages",
-    "\\packages\\EntityFramework.6.4.4"
+    "\\day-away-planner\\Migrations",
+    "\\day-away-planner\\Models",
+    "\\day-away-planner\\Presenter",
+    "\\day-away-planner\\Properties",
+    "\\day-away-planner\\Views"
   ],
-  "SelectedNode": "\\day-away-planner.sln",
+  "SelectedNode": "\\day-away-planner\\Presenter\\Client.cs",
   "PreviewInSolutionExplorer": false
 }

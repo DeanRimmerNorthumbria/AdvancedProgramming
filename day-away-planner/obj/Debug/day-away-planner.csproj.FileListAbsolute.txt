@@ -37,3 +37,24 @@ C:\Users\Dean\source\repos\AdvancedProgramming\day-away-planner\obj\Debug\day-aw
 C:\Users\Dean\source\repos\AdvancedProgramming\day-away-planner\obj\Debug\day-away-planner.csproj.CopyComplete
 C:\Users\Dean\source\repos\AdvancedProgramming\day-away-planner\obj\Debug\day-away-planner.exe
 C:\Users\Dean\source\repos\AdvancedProgramming\day-away-planner\obj\Debug\day-away-planner.pdb
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\bin\Debug\Database.mdf
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\bin\Debug\Database_log.ldf
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\bin\Debug\day-away-planner.exe.config
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\bin\Debug\day-away-planner.exe
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\bin\Debug\day-away-planner.pdb
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\bin\Debug\EntityFramework.dll
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\bin\Debug\EntityFramework.xml
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\obj\Debug\day-away-planner.csproj.AssemblyReference.cache
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\obj\Debug\day_away_planner.Views.Client.resources
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\obj\Debug\day_away_planner.Main.resources
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\obj\Debug\day_away_planner.Migrations.SeedInitialVenueData.resources
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\obj\Debug\day_away_planner.Properties.Resources.resources
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\obj\Debug\day_away_planner.Views.Venue.resources
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\obj\Debug\day-away-planner.csproj.GenerateResource.cache
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\obj\Debug\day-away-planner.csproj.CoreCompileInputs.cache
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\obj\Debug\day-away-planner.csproj.CopyComplete
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\obj\Debug\day-away-planner.exe
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\obj\Debug\day-away-planner.pdb
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\obj\Debug\day_away_planner.Views.Activity.resources

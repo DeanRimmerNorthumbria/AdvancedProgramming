@@ -49,6 +49,14 @@ namespace day_away_planner.Migrations
                 new Client() { ClientID = 15, ClientName = "Jeanelle Caine", ClientDepartment = "Marketing", ClientCompany = "Trendy Scissor", ClientDebt = 233.45, ClientArrears = false }
             );
 
+            context.Activities.AddOrUpdate(x => x.ActivityID,
+                new Activity() { ActivityID = 11, ActivityName = "Chocolate producing and marketing", ActivityCost = 750, ActivityNote = "Includes prizes for winning team, requires conference facility booking." },
+                new Activity() { ActivityID = 12, ActivityName = "Team building outdoor problem solving", ActivityCost = 850, ActivityNote = "Includes prizes for winning team, takes place in outdoor public space." },
+                new Activity() { ActivityID = 13, ActivityName = "Meditation and mindfulness workshop", ActivityCost = 500, ActivityNote = "Participants must wear loose fitting clothing, requires conference facility booking." },
+                new Activity() { ActivityID = 14, ActivityName = "Wall climbing experience", ActivityCost = 700, ActivityNote = "Size limited to 30" },
+                new Activity() { ActivityID = 15, ActivityName = "Go-cart Experience", ActivityCost = 1400, ActivityNote = "Offered only within 30 miles of Newcastle" }
+                );
+
             //  This method will be called after migrating to the latest version.
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method
             //  to avoid creating duplicate seed data.
