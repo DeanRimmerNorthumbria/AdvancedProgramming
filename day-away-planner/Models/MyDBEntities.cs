@@ -15,8 +15,8 @@ namespace day_away_planner.Models
         }
         public DbSet<Venue> Venues { get; set; }
         public DbSet<Client> Clients { get; set; }
-
         public DbSet<Activity> Activities { get; set; }
+        public DbSet<Booking> Bookings { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder) { base.OnModelCreating(modelBuilder); }
     }
 }

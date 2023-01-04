@@ -35,10 +35,9 @@
             // 
             // venueButton
             // 
-            this.venueButton.Location = new System.Drawing.Point(77, 58);
-            this.venueButton.Margin = new System.Windows.Forms.Padding(4);
+            this.venueButton.Location = new System.Drawing.Point(58, 47);
             this.venueButton.Name = "venueButton";
-            this.venueButton.Size = new System.Drawing.Size(100, 28);
+            this.venueButton.Size = new System.Drawing.Size(75, 23);
             this.venueButton.TabIndex = 0;
             this.venueButton.Text = "Venues";
             this.venueButton.UseVisualStyleBackColor = true;
@@ -46,10 +45,9 @@
             // 
             // clientButton
             // 
-            this.clientButton.Location = new System.Drawing.Point(185, 58);
-            this.clientButton.Margin = new System.Windows.Forms.Padding(4);
+            this.clientButton.Location = new System.Drawing.Point(139, 47);
             this.clientButton.Name = "clientButton";
-            this.clientButton.Size = new System.Drawing.Size(100, 28);
+            this.clientButton.Size = new System.Drawing.Size(75, 23);
             this.clientButton.TabIndex = 1;
             this.clientButton.Text = "Clients";
             this.clientButton.UseVisualStyleBackColor = true;
@@ -57,9 +55,10 @@
             // 
             // activityButton
             // 
-            this.activityButton.Location = new System.Drawing.Point(304, 58);
+            this.activityButton.Location = new System.Drawing.Point(219, 47);
+            this.activityButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.activityButton.Name = "activityButton";
-            this.activityButton.Size = new System.Drawing.Size(100, 28);
+            this.activityButton.Size = new System.Drawing.Size(75, 23);
             this.activityButton.TabIndex = 2;
             this.activityButton.Text = "Activities";
             this.activityButton.UseVisualStyleBackColor = true;
@@ -67,13 +66,12 @@
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.activityButton);
             this.Controls.Add(this.clientButton);
             this.Controls.Add(this.venueButton);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Main";
             this.Text = "Main";
             this.Load += new System.EventHandler(this.Main_Load);

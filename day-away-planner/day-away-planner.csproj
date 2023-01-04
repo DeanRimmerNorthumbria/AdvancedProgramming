@@ -74,6 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Activity.cs" />
+    <Compile Include="Models\Booking.cs" />
     <Compile Include="Models\Client.cs" />
     <Compile Include="Presenter\Activity.cs" />
     <Compile Include="Presenter\Client.cs" />
