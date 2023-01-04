@@ -55,7 +55,7 @@ namespace day_away_planner.Migrations
                 new Activity() { ActivityID = 13, ActivityName = "Meditation and mindfulness workshop", ActivityCost = 500, ActivityNote = "Participants must wear loose fitting clothing, requires conference facility booking." },
                 new Activity() { ActivityID = 14, ActivityName = "Wall climbing experience", ActivityCost = 700, ActivityNote = "Size limited to 30" },
                 new Activity() { ActivityID = 15, ActivityName = "Go-cart Experience", ActivityCost = 1400, ActivityNote = "Offered only within 30 miles of Newcastle" }
-                );
+            );
 
             //  This method will be called after migrating to the latest version.
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method
