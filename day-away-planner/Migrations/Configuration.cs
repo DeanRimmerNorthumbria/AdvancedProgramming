@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace day_away_planner.Migrations
@@ -55,6 +56,21 @@ namespace day_away_planner.Migrations
                 new Activity() { ActivityID = 13, ActivityName = "Meditation and mindfulness workshop", ActivityCost = 500, ActivityNote = "Participants must wear loose fitting clothing, requires conference facility booking." },
                 new Activity() { ActivityID = 14, ActivityName = "Wall climbing experience", ActivityCost = 700, ActivityNote = "Size limited to 30" },
                 new Activity() { ActivityID = 15, ActivityName = "Go-cart Experience", ActivityCost = 1400, ActivityNote = "Offered only within 30 miles of Newcastle" }
+            );
+
+            //creating datetime dummy data to prevent dummy data initialisation being messy
+            DateTime DataBookingDate1 = new DateTime(2021, 3, 15, 14, 35, 0);
+            DateTime DataBookingDate2 = new DateTime(2021, 5, 15, 14, 35, 0);
+            DateTime DataBookingEventDate1 = new DateTime(2021, 6, 25, 22, 24, 0);
+            DateTime DataBookingEventDate2 = new DateTime(2021, 7, 05, 12, 44, 0);
+            DateTime DataBookingEventDate3 = new DateTime(2021, 8, 11, 16, 45, 0);
+
+            context.Bookings.AddOrUpdate(x => x.BookingID,
+                new Booking() { BookingID = 1, BookingActivityID = 1, BookingClientID = 8, BookingVenueID = 1, BookingConfirmation = false, BookingCancellation = false, BookingDate = DataBookingDate1, BookingEventDate = DataBookingEventDate1 },
+                new Booking() { BookingID = 2, BookingActivityID = 2, BookingClientID = 6, BookingVenueID = 3, BookingConfirmation = true, BookingCancellation = false, BookingDate = DataBookingDate1, BookingEventDate = DataBookingEventDate2 },
+                new Booking() { BookingID = 3, BookingActivityID = 3, BookingClientID = 5, BookingVenueID = 2, BookingConfirmation = false, BookingCancellation = false, BookingDate = DataBookingDate1, BookingEventDate = DataBookingEventDate3, BookingCancellationDate = DataBookingEventDate1 },
+                new Booking() { BookingID = 4, BookingActivityID = 4, BookingClientID = 2, BookingVenueID = 4, BookingConfirmation = true, BookingCancellation = true, BookingDate = DataBookingDate2, BookingEventDate = DataBookingEventDate2, BookingCancellationDate = DataBookingEventDate1 },
+                new Booking() { BookingID = 5, BookingActivityID = 5, BookingClientID = 4, BookingVenueID = 5, BookingConfirmation = true, BookingCancellation = true, BookingDate = DataBookingDate2, BookingEventDate = DataBookingEventDate3, BookingCancellationDate = DataBookingEventDate1 }
             );
 
             //  This method will be called after migrating to the latest version.
