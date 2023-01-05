@@ -28,12 +28,5 @@ namespace day_away_planner.Models
         public bool BookingCancellation { get; set; }
         [Column(TypeName= "datetime2")]
         public DateTime BookingCancellationDate { get; set; }
-
-        [ForeignKey("BookingActivityID")]
-        public Activity BookingActivity { get; set; }
-        [ForeignKey("BookingClientID")]
-        public Client BookingClient { get; set; }
-        [ForeignKey("BookingVenueID")]
-        public Venue BookingVenue { get; set; }
     }
 }

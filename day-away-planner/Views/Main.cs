@@ -48,5 +48,12 @@ namespace day_away_planner
         {
 
         }
+
+        private void bookingsButton_Click(object sender, EventArgs e)
+        {
+            Views.Booking booking = new Views.Booking();
+            booking.Show();
+            this.Hide();
+        }
     }
 }

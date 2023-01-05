@@ -77,6 +77,7 @@
     <Compile Include="Models\Booking.cs" />
     <Compile Include="Models\Client.cs" />
     <Compile Include="Presenter\Activity.cs" />
+    <Compile Include="Presenter\Booking.cs" />
     <Compile Include="Presenter\Client.cs" />
     <Compile Include="Presenter\Venue.cs" />
     <Compile Include="Views\Activity.cs">
@@ -84,6 +85,12 @@
     </Compile>
     <Compile Include="Views\Activity.Designer.cs">
       <DependentUpon>Activity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Booking.Designer.cs">
+      <DependentUpon>Booking.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Client.cs">
       <SubType>Form</SubType>
@@ -114,6 +121,9 @@
     </Compile>
     <EmbeddedResource Include="Views\Activity.resx">
       <DependentUpon>Activity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Booking.resx">
+      <DependentUpon>Booking.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Client.resx">
       <DependentUpon>Client.cs</DependentUpon>
