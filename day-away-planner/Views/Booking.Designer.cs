@@ -53,14 +53,14 @@
             this.bookingGridView.Location = new System.Drawing.Point(12, 23);
             this.bookingGridView.Name = "bookingGridView";
             this.bookingGridView.ReadOnly = true;
-            this.bookingGridView.Size = new System.Drawing.Size(1108, 411);
+            this.bookingGridView.Size = new System.Drawing.Size(1183, 411);
             this.bookingGridView.TabIndex = 4;
             // 
             // Booking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1132, 490);
+            this.ClientSize = new System.Drawing.Size(1207, 490);
             this.Controls.Add(this.back);
             this.Controls.Add(this.bookingGridView);
             this.Name = "Booking";
