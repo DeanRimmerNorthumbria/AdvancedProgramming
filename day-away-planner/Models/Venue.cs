@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace day_away_planner.Models { 
-public class Venue : IVenue
+public class Venue
 {
     [Key]
     public int VenueID { get; set; }

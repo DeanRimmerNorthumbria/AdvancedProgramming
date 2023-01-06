@@ -14,5 +14,7 @@ namespace day_away_planner.Models
         string VenueExtras { get; set; }
         string VenueLocation { get; set; }
         int VenueCapacity { get; set; }
+
+        List<Models.Venue> VenueList();
     }
 }

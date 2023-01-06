@@ -21,7 +21,7 @@ namespace day_away_planner.Views
         {
             Presenter.Venue venue = new Presenter.Venue();
 
-            venueGridView.DataSource= venue.getVenueList();
+            venueGridView.DataSource= venue.VenueList();
         }
 
         private void back_Click(object sender, EventArgs e)
