@@ -74,8 +74,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Client.cs" />
-    <Compile Include="Presenter\IVenue.cs" />
     <Compile Include="Presenter\Client.cs" />
+    <Compile Include="Presenter\IVenue.cs" />
     <Compile Include="Presenter\Venue.cs" />
     <Compile Include="Views\Client.cs">
       <SubType>Form</SubType>
