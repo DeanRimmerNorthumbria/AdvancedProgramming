@@ -28,7 +28,7 @@ namespace day_away_planner.Views
         {
             Presenter.Client client = new Presenter.Client();
 
-            clientGridView.DataSource = client.getClientList();
+            clientGridView.DataSource = client.ClientList();
         }
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace day_away_planner.Presenter
 {
-    internal class Venue
+    public class Venue : IVenue
     {
         public Venue()
         {
@@ -15,7 +15,14 @@ namespace day_away_planner.Presenter
 
         }
 
-        public List<Models.Venue> getVenueList()
+        public int VenueID { get; set; }
+        public string VenueName { get; set; }
+        public double VenueCost { get; set; }
+        public string VenueExtras { get; set; }
+        public string VenueLocation { get; set; }
+        public int VenueCapacity { get; set; }
+
+        public List<Models.Venue> VenueList()
         {
             using (var context = new MyDBEntities())
             {
