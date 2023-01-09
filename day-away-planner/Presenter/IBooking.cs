@@ -20,6 +20,7 @@ namespace day_away_planner.Presenter
         bool BookingCancellation { get; set; }
         DateTime BookingCancellationDate { get; set; }
         List<dynamic> BookingList();
+        List<dynamic> BookingFilter(List<bool> filters);
     }
 }
 
