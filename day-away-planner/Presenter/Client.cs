@@ -29,6 +29,23 @@ namespace day_away_planner.Presenter
                 return clientList;
             }
         }
+
+        public List<Models.Client> FindClients(string searchString)
+        {
+            using (var context = new MyDBEntities())
+            {
+                var clientList = context.Clients.ToList<Models.Client>();
+                var foundClients = new List<Models.Client>();
+                
+                foreach(var client in clientList)
+                {
+                    if (client.ClientCompany.Contains(searchString)){
+                        foundClients.Add(client);
+                    }
+                }
+                return foundClients;
+            }
+        }
     }
 
 
