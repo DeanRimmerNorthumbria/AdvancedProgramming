@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace day_away_planner.Presenter
 {
-    internal class Booking
+    internal class Booking : IBooking
     {
         public Booking()
         {
@@ -16,8 +16,16 @@ namespace day_away_planner.Presenter
 
         }
 
-
-        public List<dynamic> getBookingList()
+        public int BookingID { get; set; }
+        public int BookingActivityID { get; set; }
+        public int BookingClientID { get; set; }
+        public int BookingVenueID { get; set; }
+        public bool BookingConfirmation { get; set; }
+        public DateTime BookingDate { get; set; }
+        public DateTime BookingEventDate { get; set; }
+        public bool BookingCancellation { get; set; }
+        public DateTime BookingCancellationDate { get; set; }
+        public List<dynamic> BookingList()
         {
             using (var context = new MyDBEntities())
             {

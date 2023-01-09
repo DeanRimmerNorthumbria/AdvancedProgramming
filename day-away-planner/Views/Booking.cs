@@ -29,7 +29,7 @@ namespace day_away_planner.Views
         {
             Presenter.Booking booking = new Presenter.Booking();
 
-            bookingGridView.DataSource = booking.getBookingList();
+            bookingGridView.DataSource = booking.BookingList();
         }
 
 

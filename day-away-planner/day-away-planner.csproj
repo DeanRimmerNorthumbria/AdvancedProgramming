@@ -79,6 +79,7 @@
     <Compile Include="Presenter\Activity.cs" />
     <Compile Include="Presenter\Booking.cs" />
     <Compile Include="Presenter\Client.cs" />
+    <Compile Include="Presenter\IBooking.cs" />
     <Compile Include="Presenter\IClient.cs" />
     <Compile Include="Presenter\IVenue.cs" />
     <Compile Include="Presenter\Venue.cs" />
