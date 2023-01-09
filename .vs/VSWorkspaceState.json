@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\day-away-planner",
+    "\\day-away-planner\\Migrations",
+    "\\day-away-planner\\Models",
+    "\\day-away-planner\\Presenter",
+    "\\day-away-planner\\Properties",
+    "\\day-away-planner\\Views"
+  ],
+  "SelectedNode": "\\day-away-planner\\Presenter\\Client.cs",
+  "PreviewInSolutionExplorer": false
+}
