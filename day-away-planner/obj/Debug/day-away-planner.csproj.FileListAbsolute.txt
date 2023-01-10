@@ -83,3 +83,4 @@ C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\d
 C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\day-away-planner.csproj.CopyComplete
 C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\day-away-planner.exe
 C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\day-away-planner.pdb
+C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Views.NewBooking.resources

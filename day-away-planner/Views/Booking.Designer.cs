@@ -36,6 +36,7 @@
             this.bookingConfirmed = new System.Windows.Forms.CheckBox();
             this.bookingCancelled = new System.Windows.Forms.CheckBox();
             this.bookingCompleted = new System.Windows.Forms.CheckBox();
+            this.createNewBooking = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bookingGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -141,11 +142,22 @@
             this.bookingCompleted.UseVisualStyleBackColor = true;
             this.bookingCompleted.CheckedChanged += new System.EventHandler(this.bookingCompleted_CheckedChanged);
             // 
+            // createNewBooking
+            // 
+            this.createNewBooking.Location = new System.Drawing.Point(1066, 531);
+            this.createNewBooking.Name = "createNewBooking";
+            this.createNewBooking.Size = new System.Drawing.Size(129, 23);
+            this.createNewBooking.TabIndex = 12;
+            this.createNewBooking.Text = "New Booking";
+            this.createNewBooking.UseVisualStyleBackColor = false;
+            this.createNewBooking.Click += new System.EventHandler(this.createNewBooking_Click);
+            // 
             // Booking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1207, 631);
+            this.Controls.Add(this.createNewBooking);
             this.Controls.Add(this.bookingCompleted);
             this.Controls.Add(this.bookingCancelled);
             this.Controls.Add(this.bookingConfirmed);
@@ -173,5 +185,6 @@
         private System.Windows.Forms.CheckBox bookingConfirmed;
         private System.Windows.Forms.CheckBox bookingCancelled;
         private System.Windows.Forms.CheckBox bookingCompleted;
+        private System.Windows.Forms.Button createNewBooking;
     }
 }

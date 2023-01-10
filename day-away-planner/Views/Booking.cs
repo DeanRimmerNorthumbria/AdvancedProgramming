@@ -13,7 +13,8 @@ namespace day_away_planner.Views
 {
     public partial class Booking : Form
     {
-        private Presenter.Booking booking = new Presenter.Booking();
+        BookingWindow window = new BookingWindow();
+        
         public Booking()
         {
             InitializeComponent();
@@ -28,7 +29,7 @@ namespace day_away_planner.Views
 
         private void Booking_Load(object sender, EventArgs e)
         {
-            bookingGridView.DataSource = booking.BookingList();
+            bookingGridView.DataSource = window.BookingList();
         }
 
         private void bookingGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -61,7 +62,7 @@ namespace day_away_planner.Views
 
         private void applyFilters()
         {
-            bookingGridView.DataSource = booking.BookingFilter(checkFilters());
+            bookingGridView.DataSource = window.BookingFilter(checkFilters());
             bookingGridView.Refresh();
         }
 
@@ -83,6 +84,13 @@ namespace day_away_planner.Views
         private void bookingCompleted_CheckedChanged(object sender, EventArgs e)
         {
             applyFilters();
+        }
+
+        private void createNewBooking_Click(object sender, EventArgs e)
+        {
+            NewBooking newBooking = new NewBooking(window);
+            newBooking.Show();
+            this.Hide();
         }
     }
 }
