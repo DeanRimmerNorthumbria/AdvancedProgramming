@@ -37,7 +37,6 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -141,14 +140,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(158, 20);
             this.textBox3.TabIndex = 25;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(256, 100);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(158, 20);
-            this.textBox2.TabIndex = 24;
             // 
             // textBox1
             // 
@@ -270,7 +261,7 @@
             // 
             // selectActivity
             // 
-            this.selectActivity.Location = new System.Drawing.Point(38, 355);
+            this.selectActivity.Location = new System.Drawing.Point(256, 98);
             this.selectActivity.Name = "selectActivity";
             this.selectActivity.Size = new System.Drawing.Size(83, 23);
             this.selectActivity.TabIndex = 2;
@@ -280,7 +271,7 @@
             // 
             // what
             // 
-            this.what.Location = new System.Drawing.Point(152, 355);
+            this.what.Location = new System.Drawing.Point(345, 98);
             this.what.Name = "what";
             this.what.Size = new System.Drawing.Size(75, 23);
             this.what.TabIndex = 3;
@@ -300,7 +291,6 @@
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -335,7 +325,6 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
