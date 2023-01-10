@@ -90,7 +90,6 @@ namespace day_away_planner.Views
         {
             NewBooking newBooking = new NewBooking(window);
             newBooking.Show();
-            this.Hide();
         }
     }
 }
