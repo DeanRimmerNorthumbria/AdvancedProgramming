@@ -30,9 +30,43 @@ namespace day_away_planner.Views
 
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void who_Click(object sender, EventArgs e)
         {
             Console.WriteLine(window.BookingClient.ClientName);
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
+        {
+            button2.Enabled = checkBox1.Checked;
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Booking Created Confirmation will be sent out");
+            this.Close();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            DialogResult dr = MessageBox.Show("Would you like to Close this Window?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dr == DialogResult.Yes)
+                this.Close();
         }
     }
 }
