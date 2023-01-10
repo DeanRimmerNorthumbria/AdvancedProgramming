@@ -124,6 +124,12 @@
     <Compile Include="Views\NewBooking.Designer.cs">
       <DependentUpon>NewBooking.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\NewClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\NewClient.Designer.cs">
+      <DependentUpon>NewClient.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Venue.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +162,9 @@
     </Compile>
     <EmbeddedResource Include="Views\NewBooking.resx">
       <DependentUpon>NewBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NewClient.resx">
+      <DependentUpon>NewClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Venue.resx">
       <DependentUpon>Venue.cs</DependentUpon>
