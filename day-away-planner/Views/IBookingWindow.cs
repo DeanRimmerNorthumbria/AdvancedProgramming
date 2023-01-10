@@ -10,6 +10,8 @@ namespace day_away_planner.Views
     {
         Models.Client BookingClient { get; set; }
 
+        Models.Activity BookingActivity { get; set; }
+
         List<dynamic> BookingList();
 
         List<dynamic> BookingFilter(List<bool> filters);

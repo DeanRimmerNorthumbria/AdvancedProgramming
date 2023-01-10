@@ -37,7 +37,6 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -47,6 +46,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
+            this.modifyClient = new System.Windows.Forms.Button();
+            this.newClient = new System.Windows.Forms.Button();
+            this.selectActivity = new System.Windows.Forms.Button();
+            this.what = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // selectClient
@@ -61,7 +64,7 @@
             // 
             // who
             // 
-            this.who.Location = new System.Drawing.Point(462, 413);
+            this.who.Location = new System.Drawing.Point(546, 260);
             this.who.Name = "who";
             this.who.Size = new System.Drawing.Size(75, 23);
             this.who.TabIndex = 1;
@@ -137,14 +140,6 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(158, 20);
             this.textBox3.TabIndex = 25;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(256, 100);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(158, 20);
-            this.textBox2.TabIndex = 24;
             // 
             // textBox1
             // 
@@ -244,11 +239,51 @@
             this.label8.Text = "Client";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
+            // modifyClient
+            // 
+            this.modifyClient.Location = new System.Drawing.Point(337, 260);
+            this.modifyClient.Name = "modifyClient";
+            this.modifyClient.Size = new System.Drawing.Size(122, 23);
+            this.modifyClient.TabIndex = 2;
+            this.modifyClient.Text = "Modify Existing Client";
+            this.modifyClient.UseVisualStyleBackColor = true;
+            this.modifyClient.Click += new System.EventHandler(this.modifyClient_Click);
+            // 
+            // newClient
+            // 
+            this.newClient.Location = new System.Drawing.Point(465, 260);
+            this.newClient.Name = "newClient";
+            this.newClient.Size = new System.Drawing.Size(75, 23);
+            this.newClient.TabIndex = 3;
+            this.newClient.Text = "New Client";
+            this.newClient.UseVisualStyleBackColor = true;
+            this.newClient.Click += new System.EventHandler(this.newClient_Click);
+            // 
+            // selectActivity
+            // 
+            this.selectActivity.Location = new System.Drawing.Point(256, 98);
+            this.selectActivity.Name = "selectActivity";
+            this.selectActivity.Size = new System.Drawing.Size(83, 23);
+            this.selectActivity.TabIndex = 2;
+            this.selectActivity.Text = "Select Activity";
+            this.selectActivity.UseVisualStyleBackColor = true;
+            this.selectActivity.Click += new System.EventHandler(this.selectActivity_Click);
+            // 
+            // what
+            // 
+            this.what.Location = new System.Drawing.Point(345, 98);
+            this.what.Name = "what";
+            this.what.Size = new System.Drawing.Size(75, 23);
+            this.what.TabIndex = 3;
+            this.what.Text = "what";
+            this.what.UseVisualStyleBackColor = true;
+            this.what.Click += new System.EventHandler(this.what_Click);
+            // 
             // NewBooking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(622, 450);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.button2);
@@ -256,7 +291,6 @@
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -266,6 +300,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.newClient);
+            this.Controls.Add(this.modifyClient);
+            this.Controls.Add(this.what);
+            this.Controls.Add(this.selectActivity);
             this.Controls.Add(this.who);
             this.Controls.Add(this.selectClient);
             this.Name = "NewBooking";
@@ -287,7 +325,6 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -297,5 +334,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button modifyClient;
+        private System.Windows.Forms.Button newClient;
+        private System.Windows.Forms.Button selectActivity;
+        private System.Windows.Forms.Button what;
     }
 }

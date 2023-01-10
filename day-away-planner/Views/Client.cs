@@ -73,5 +73,10 @@ namespace day_away_planner.Views
             NewClient c = new NewClient();
             c.Show();
         }
+
+        private void clientGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

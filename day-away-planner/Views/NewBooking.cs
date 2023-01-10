@@ -30,20 +30,20 @@ namespace day_away_planner.Views
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void who_Click(object sender, EventArgs e)
         {
             Console.WriteLine(window.BookingClient.ClientName);
+        }
+
+        private void modifyClient_Click(object sender, EventArgs e)
+        {
+            Client c = new Client(window);
+            c.Show();
+        }
+
+        private void newClient_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void label8_Click(object sender, EventArgs e)
@@ -67,6 +67,17 @@ namespace day_away_planner.Views
             DialogResult dr = MessageBox.Show("Would you like to Close this Window?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dr == DialogResult.Yes)
                 this.Close();
+        }
+
+        private void selectActivity_Click(object sender, EventArgs e)
+        {
+            Activity a = new Activity(window);
+            a.Show();
+        }
+
+        private void what_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine(window.BookingActivity.ActivityName);
         }
     }
 }
