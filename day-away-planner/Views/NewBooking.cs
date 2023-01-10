@@ -34,5 +34,16 @@ namespace day_away_planner.Views
         {
             Console.WriteLine(window.BookingClient.ClientName);
         }
+
+        private void modifyClient_Click(object sender, EventArgs e)
+        {
+            Client c = new Client(window);
+            c.Show();
+        }
+
+        private void newClient_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
