@@ -37,7 +37,6 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -50,6 +49,8 @@
             this.newClient = new System.Windows.Forms.Button();
             this.selectActivity = new System.Windows.Forms.Button();
             this.what = new System.Windows.Forms.Button();
+            this.selectVenue = new System.Windows.Forms.Button();
+            this.where = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // selectClient
@@ -141,14 +142,6 @@
             this.textBox3.Size = new System.Drawing.Size(158, 20);
             this.textBox3.TabIndex = 25;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(256, 64);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(158, 20);
-            this.textBox1.TabIndex = 23;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -211,9 +204,9 @@
             this.label2.Location = new System.Drawing.Point(65, 62);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 20);
+            this.label2.Size = new System.Drawing.Size(56, 20);
             this.label2.TabIndex = 17;
-            this.label2.Text = "Venue Address";
+            this.label2.Text = "Venue";
             // 
             // button1
             // 
@@ -279,11 +272,34 @@
             this.what.UseVisualStyleBackColor = true;
             this.what.Click += new System.EventHandler(this.what_Click);
             // 
+            // selectVenue
+            // 
+            this.selectVenue.Location = new System.Drawing.Point(256, 59);
+            this.selectVenue.Name = "selectVenue";
+            this.selectVenue.Size = new System.Drawing.Size(83, 23);
+            this.selectVenue.TabIndex = 32;
+            this.selectVenue.Text = "Select Venue";
+            this.selectVenue.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.selectVenue.UseVisualStyleBackColor = true;
+            this.selectVenue.Click += new System.EventHandler(this.selectVenue_Click);
+            // 
+            // where
+            // 
+            this.where.Location = new System.Drawing.Point(345, 59);
+            this.where.Name = "where";
+            this.where.Size = new System.Drawing.Size(83, 23);
+            this.where.TabIndex = 33;
+            this.where.Text = "where";
+            this.where.UseVisualStyleBackColor = true;
+            this.where.Click += new System.EventHandler(this.where_Click);
+            // 
             // NewBooking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.where);
+            this.Controls.Add(this.selectVenue);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.button2);
@@ -291,7 +307,6 @@
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -325,7 +340,6 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -338,5 +352,7 @@
         private System.Windows.Forms.Button newClient;
         private System.Windows.Forms.Button selectActivity;
         private System.Windows.Forms.Button what;
+        private System.Windows.Forms.Button selectVenue;
+        private System.Windows.Forms.Button where;
     }
 }

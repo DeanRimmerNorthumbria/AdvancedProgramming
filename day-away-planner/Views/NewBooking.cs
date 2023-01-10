@@ -79,5 +79,16 @@ namespace day_away_planner.Views
         {
             Console.WriteLine(window.BookingActivity.ActivityName);
         }
+
+        private void selectVenue_Click(object sender, EventArgs e)
+        {
+            Venue v = new Venue(window);
+            v.Show();
+        }
+
+        private void where_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine(window.BookingVenue.VenueName);
+        }
     }
 }

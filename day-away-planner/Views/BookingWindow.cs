@@ -14,6 +14,8 @@ namespace day_away_planner.Views
 
         }
 
+        public Models.Venue BookingVenue { get; set; }
+
         public Models.Client BookingClient { get; set; }
 
         public Models.Activity BookingActivity { get; set; }
