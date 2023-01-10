@@ -14,6 +14,8 @@ namespace day_away_planner.Views
     {
         private BookingWindow bookingWindow;
         private List<Models.Client> clients;
+
+        private Presenter.Client client = new Presenter.Client();
         public Client()
         {
             InitializeComponent();
@@ -35,6 +37,7 @@ namespace day_away_planner.Views
 
         private void Client_Load(object sender, EventArgs e)
         {
+
             Presenter.Client client = new Presenter.Client();
             clients = client.ClientList();
             clientGridView.DataSource = clients;
@@ -46,6 +49,22 @@ namespace day_away_planner.Views
             {
                bookingWindow.BookingClient = clients[e.RowIndex];
                this.Close();
+            }
+
+            clientGridView.DataSource = client.ClientList();
+
+        }
+
+        private void companyName_TextChanged(object sender, EventArgs e)
+        {
+            var search = companyName.Text;
+            if (search != "")
+            {
+                clientGridView.DataSource = client.FindClients(search);
+            }
+            else
+            {
+                clientGridView.DataSource = client.ClientList();
             }
         }
     }
