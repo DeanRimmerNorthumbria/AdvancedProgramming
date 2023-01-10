@@ -16,6 +16,8 @@ namespace day_away_planner.Views
 
         public Models.Client BookingClient { get; set; }
 
+        public Models.Activity BookingActivity { get; set; }
+
         public List<dynamic> BookingList()
         {
             return booking.BookingList();

@@ -30,6 +30,8 @@
         {
             this.selectClient = new System.Windows.Forms.Button();
             this.who = new System.Windows.Forms.Button();
+            this.selectActivity = new System.Windows.Forms.Button();
+            this.what = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // selectClient
@@ -52,11 +54,33 @@
             this.who.UseVisualStyleBackColor = true;
             this.who.Click += new System.EventHandler(this.who_Click);
             // 
+            // selectActivity
+            // 
+            this.selectActivity.Location = new System.Drawing.Point(38, 355);
+            this.selectActivity.Name = "selectActivity";
+            this.selectActivity.Size = new System.Drawing.Size(83, 23);
+            this.selectActivity.TabIndex = 2;
+            this.selectActivity.Text = "Select Activity";
+            this.selectActivity.UseVisualStyleBackColor = true;
+            this.selectActivity.Click += new System.EventHandler(this.selectActivity_Click);
+            // 
+            // what
+            // 
+            this.what.Location = new System.Drawing.Point(152, 355);
+            this.what.Name = "what";
+            this.what.Size = new System.Drawing.Size(75, 23);
+            this.what.TabIndex = 3;
+            this.what.Text = "what";
+            this.what.UseVisualStyleBackColor = true;
+            this.what.Click += new System.EventHandler(this.what_Click);
+            // 
             // NewBooking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.what);
+            this.Controls.Add(this.selectActivity);
             this.Controls.Add(this.who);
             this.Controls.Add(this.selectClient);
             this.Name = "NewBooking";
@@ -70,5 +94,7 @@
 
         private System.Windows.Forms.Button selectClient;
         private System.Windows.Forms.Button who;
+        private System.Windows.Forms.Button selectActivity;
+        private System.Windows.Forms.Button what;
     }
 }

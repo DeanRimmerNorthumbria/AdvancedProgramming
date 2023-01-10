@@ -58,6 +58,7 @@
             this.clientGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.clientGridView.Size = new System.Drawing.Size(776, 411);
             this.clientGridView.TabIndex = 2;
+            this.clientGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.clientGridView_CellContentClick);
             this.clientGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.clientGridView_RowCellDoubleClick);
             // 
             // companyName

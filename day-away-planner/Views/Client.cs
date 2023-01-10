@@ -67,5 +67,10 @@ namespace day_away_planner.Views
                 clientGridView.DataSource = client.ClientList();
             }
         }
+
+        private void clientGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

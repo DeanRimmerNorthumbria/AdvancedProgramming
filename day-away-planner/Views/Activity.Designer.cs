@@ -49,7 +49,7 @@ namespace day_away_planner.Views
             this.activityGridView.RowTemplate.Height = 24;
             this.activityGridView.Size = new System.Drawing.Size(656, 388);
             this.activityGridView.TabIndex = 2;
-            this.activityGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.activityGridView_CellContentClick);
+            this.activityGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.activityGridView_RowCellDoubleClick);
             // 
             // back
             // 
