@@ -45,7 +45,7 @@ namespace day_away_planner.Views
             if(bookingWindow != null)
             {
                bookingWindow.BookingClient = clients[e.RowIndex];
-                this.Close();
+               this.Close();
             }
         }
     }

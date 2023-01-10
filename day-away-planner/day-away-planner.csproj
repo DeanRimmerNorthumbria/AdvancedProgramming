@@ -102,6 +102,7 @@
       <DependentUpon>Client.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\BookingWindow.cs" />
+    <Compile Include="Views\IBookingWindow.cs" />
     <Compile Include="Views\Main.cs">
       <SubType>Form</SubType>
     </Compile>

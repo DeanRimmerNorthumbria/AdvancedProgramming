@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace day_away_planner.Views
 {
-    internal class BookingWindow
+    internal class BookingWindow : IBookingWindow
     {
         private Presenter.Booking booking = new Presenter.Booking();
         public BookingWindow()
