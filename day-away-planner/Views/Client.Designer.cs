@@ -53,8 +53,10 @@
             this.clientGridView.Location = new System.Drawing.Point(12, 12);
             this.clientGridView.Name = "clientGridView";
             this.clientGridView.ReadOnly = true;
+            this.clientGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.clientGridView.Size = new System.Drawing.Size(776, 411);
             this.clientGridView.TabIndex = 2;
+            this.clientGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.clientGridView_RowCellDoubleClick);
             // 
             // Client
             // 

@@ -12,9 +12,18 @@ namespace day_away_planner.Views
 {
     public partial class Client : Form
     {
+        private BookingWindow bookingWindow;
+        private List<Models.Client> clients;
         public Client()
         {
             InitializeComponent();
+        }
+
+        internal Client(BookingWindow window)
+        {
+            this.bookingWindow = window;
+            InitializeComponent();
+            back.Enabled = false;
         }
 
         private void back_Click(object sender, EventArgs e)
@@ -27,8 +36,17 @@ namespace day_away_planner.Views
         private void Client_Load(object sender, EventArgs e)
         {
             Presenter.Client client = new Presenter.Client();
+            clients = client.ClientList();
+            clientGridView.DataSource = clients;
+        }
 
-            clientGridView.DataSource = client.ClientList();
+        private void clientGridView_RowCellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(bookingWindow != null)
+            {
+               bookingWindow.BookingClient = clients[e.RowIndex];
+                this.Close();
+            }
         }
     }
 }
