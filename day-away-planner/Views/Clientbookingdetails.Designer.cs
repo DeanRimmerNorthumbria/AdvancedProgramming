@@ -182,11 +182,11 @@ namespace day_away_planner.Views
             // clientNewbooking
             // 
             this.clientNewbooking.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clientNewbooking.Location = new System.Drawing.Point(905, 575);
+            this.clientNewbooking.Location = new System.Drawing.Point(924, 575);
             this.clientNewbooking.Name = "clientNewbooking";
-            this.clientNewbooking.Size = new System.Drawing.Size(220, 34);
+            this.clientNewbooking.Size = new System.Drawing.Size(172, 34);
             this.clientNewbooking.TabIndex = 14;
-            this.clientNewbooking.Text = "New Booking";
+            this.clientNewbooking.Text = "Create New Booking";
             this.clientNewbooking.UseVisualStyleBackColor = true;
             this.clientNewbooking.Click += new System.EventHandler(this.clientNewbooking_Click);
             // 
