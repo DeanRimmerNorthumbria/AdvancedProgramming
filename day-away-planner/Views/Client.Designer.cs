@@ -32,6 +32,7 @@
             this.clientGridView = new System.Windows.Forms.DataGridView();
             this.companyName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.createNewClient = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.clientGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,11 +79,22 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Company Name:";
             // 
+            // createNewClient
+            // 
+            this.createNewClient.Location = new System.Drawing.Point(659, 509);
+            this.createNewClient.Name = "createNewClient";
+            this.createNewClient.Size = new System.Drawing.Size(129, 23);
+            this.createNewClient.TabIndex = 13;
+            this.createNewClient.Text = "New Client";
+            this.createNewClient.UseVisualStyleBackColor = false;
+            this.createNewClient.Click += new System.EventHandler(this.createNewClient_Click);
+            // 
             // Client
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(816, 558);
+            this.Controls.Add(this.createNewClient);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.companyName);
             this.Controls.Add(this.back);
@@ -102,5 +114,6 @@
         private System.Windows.Forms.DataGridView clientGridView;
         private System.Windows.Forms.TextBox companyName;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button createNewClient;
     }
 }
