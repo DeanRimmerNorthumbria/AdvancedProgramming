@@ -43,7 +43,7 @@ namespace day_away_planner.Views
             this.Clnt_Booked_date = new System.Windows.Forms.TextBox();
             this.Client_Address = new System.Windows.Forms.TextBox();
             this.Clnt_Address = new System.Windows.Forms.Label();
-            this.Clnt_BackButton = new System.Windows.Forms.Button();
+            this.clientNewbooking = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Clnt_Name
@@ -179,22 +179,23 @@ namespace day_away_planner.Views
             this.Clnt_Address.TabIndex = 13;
             this.Clnt_Address.Text = "Address";
             // 
-            // Clnt_BackButton
+            // clientNewbooking
             // 
-            this.Clnt_BackButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Clnt_BackButton.Location = new System.Drawing.Point(51, 553);
-            this.Clnt_BackButton.Name = "Clnt_BackButton";
-            this.Clnt_BackButton.Size = new System.Drawing.Size(75, 34);
-            this.Clnt_BackButton.TabIndex = 14;
-            this.Clnt_BackButton.Text = "Back";
-            this.Clnt_BackButton.UseVisualStyleBackColor = true;
+            this.clientNewbooking.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clientNewbooking.Location = new System.Drawing.Point(905, 575);
+            this.clientNewbooking.Name = "clientNewbooking";
+            this.clientNewbooking.Size = new System.Drawing.Size(220, 34);
+            this.clientNewbooking.TabIndex = 14;
+            this.clientNewbooking.Text = "New Booking";
+            this.clientNewbooking.UseVisualStyleBackColor = true;
+            this.clientNewbooking.Click += new System.EventHandler(this.clientNewbooking_Click);
             // 
             // Clientbookingdetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1156, 639);
-            this.Controls.Add(this.Clnt_BackButton);
+            this.Controls.Add(this.clientNewbooking);
             this.Controls.Add(this.Clnt_Address);
             this.Controls.Add(this.Client_Address);
             this.Controls.Add(this.Clnt_Booked_date);
@@ -233,6 +234,6 @@ namespace day_away_planner.Views
         private System.Windows.Forms.TextBox Clnt_Booked_date;
         private System.Windows.Forms.TextBox Client_Address;
         private System.Windows.Forms.Label Clnt_Address;
-        private System.Windows.Forms.Button Clnt_BackButton;
+        private System.Windows.Forms.Button clientNewbooking;
     }
 }

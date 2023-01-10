@@ -21,5 +21,11 @@ namespace day_away_planner.Views
         {
 
         }
+
+        private void clientNewbooking_Click(object sender, EventArgs e)
+        {
+            Newbooking d = new Newbooking(window);
+            d.show;
+        }
     }
 }
