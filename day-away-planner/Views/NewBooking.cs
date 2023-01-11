@@ -58,6 +58,7 @@ namespace day_away_planner.Views
 
         private void button2_Click_1(object sender, EventArgs e)
         {
+            window.BookingCreate(window.BookingClient, window.BookingActivity, window.BookingVenue, textBox4.Text, textBox3.Text, textBox5.Text, textBox6.Text);
             MessageBox.Show("Booking Created Confirmation will be sent out");
             this.Close();
         }
@@ -89,6 +90,11 @@ namespace day_away_planner.Views
         private void where_Click(object sender, EventArgs e)
         {
             Console.WriteLine(window.BookingVenue.VenueName);
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

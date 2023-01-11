@@ -50,9 +50,6 @@ namespace day_away_planner.Views
                bookingWindow.BookingClient = clients[e.RowIndex];
                this.Close();
             }
-
-            clientGridView.DataSource = client.ClientList();
-
         }
 
         private void companyName_TextChanged(object sender, EventArgs e)

@@ -51,6 +51,9 @@
             this.what = new System.Windows.Forms.Button();
             this.selectVenue = new System.Windows.Forms.Button();
             this.where = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // selectClient
@@ -293,11 +296,42 @@
             this.where.UseVisualStyleBackColor = true;
             this.where.Click += new System.EventHandler(this.where_Click);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(424, 135);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(51, 13);
+            this.label9.TabIndex = 34;
+            this.label9.Text = "hh:mm:ss";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(424, 169);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(61, 13);
+            this.label10.TabIndex = 35;
+            this.label10.Text = "dd:mm:yyyy";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(424, 200);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(40, 13);
+            this.label11.TabIndex = 36;
+            this.label11.Text = "xxxx.yy";
+            // 
             // NewBooking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.where);
             this.Controls.Add(this.selectVenue);
             this.Controls.Add(this.label8);
@@ -354,5 +388,8 @@
         private System.Windows.Forms.Button what;
         private System.Windows.Forms.Button selectVenue;
         private System.Windows.Forms.Button where;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
     }
 }
