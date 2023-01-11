@@ -35,9 +35,10 @@
             // 
             // back
             // 
-            this.back.Location = new System.Drawing.Point(12, 444);
+            this.back.Location = new System.Drawing.Point(16, 546);
+            this.back.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(75, 23);
+            this.back.Size = new System.Drawing.Size(100, 28);
             this.back.TabIndex = 3;
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = true;
@@ -50,19 +51,23 @@
             this.clientGridView.AllowUserToAddRows = false;
             this.clientGridView.AllowUserToDeleteRows = false;
             this.clientGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.clientGridView.Location = new System.Drawing.Point(12, 12);
+            this.clientGridView.Location = new System.Drawing.Point(16, 15);
+            this.clientGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.clientGridView.Name = "clientGridView";
             this.clientGridView.ReadOnly = true;
-            this.clientGridView.Size = new System.Drawing.Size(776, 411);
+            this.clientGridView.RowHeadersWidth = 51;
+            this.clientGridView.Size = new System.Drawing.Size(1035, 506);
             this.clientGridView.TabIndex = 2;
+            this.clientGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.clientGridView_CellContentClick);
             // 
             // Client
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(816, 491);
+            this.ClientSize = new System.Drawing.Size(1088, 604);
             this.Controls.Add(this.back);
             this.Controls.Add(this.clientGridView);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Client";
             this.Text = "Client";
             this.Load += new System.EventHandler(this.Client_Load);

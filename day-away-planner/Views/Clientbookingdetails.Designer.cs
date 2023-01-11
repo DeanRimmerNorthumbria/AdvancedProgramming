@@ -31,7 +31,7 @@ namespace day_away_planner.Views
         {
             this.Clnt_Name = new System.Windows.Forms.Label();
             this.Cmp_Name = new System.Windows.Forms.Label();
-            this.Cmp_phone = new System.Windows.Forms.Label();
+            this.Department = new System.Windows.Forms.Label();
             this.Cmp_Email = new System.Windows.Forms.Label();
             this.Company_Bookings = new System.Windows.Forms.TextBox();
             this.Clnt_booking_details = new System.Windows.Forms.Label();
@@ -39,7 +39,7 @@ namespace day_away_planner.Views
             this.Clnt_Address = new System.Windows.Forms.Label();
             this.clientNewbooking = new System.Windows.Forms.Button();
             this.Company_Email = new System.Windows.Forms.TextBox();
-            this.Company_Phone = new System.Windows.Forms.TextBox();
+            this.Client_Department = new System.Windows.Forms.TextBox();
             this.Company_Name = new System.Windows.Forms.TextBox();
             this.Client_Name = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -64,15 +64,15 @@ namespace day_away_planner.Views
             this.Cmp_Name.TabIndex = 2;
             this.Cmp_Name.Text = "CompanyName";
             // 
-            // Cmp_phone
+            // Department
             // 
-            this.Cmp_phone.AutoSize = true;
-            this.Cmp_phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cmp_phone.Location = new System.Drawing.Point(46, 163);
-            this.Cmp_phone.Name = "Cmp_phone";
-            this.Cmp_phone.Size = new System.Drawing.Size(56, 20);
-            this.Cmp_phone.TabIndex = 3;
-            this.Cmp_phone.Text = "Phone";
+            this.Department.AutoSize = true;
+            this.Department.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Department.Location = new System.Drawing.Point(46, 163);
+            this.Department.Name = "Department";
+            this.Department.Size = new System.Drawing.Size(56, 20);
+            this.Department.TabIndex = 3;
+            this.Department.Text = "Phone";
             // 
             // Cmp_Email
             // 
@@ -89,7 +89,6 @@ namespace day_away_planner.Views
             this.Company_Bookings.Location = new System.Drawing.Point(632, 66);
             this.Company_Bookings.Multiline = true;
             this.Company_Bookings.Name = "Company_Bookings";
-            this.Company_Bookings.ReadOnly = true;
             this.Company_Bookings.Size = new System.Drawing.Size(493, 359);
             this.Company_Bookings.TabIndex = 8;
             // 
@@ -108,7 +107,6 @@ namespace day_away_planner.Views
             this.Client_Address.Location = new System.Drawing.Point(215, 289);
             this.Client_Address.Multiline = true;
             this.Client_Address.Name = "Client_Address";
-            this.Client_Address.ReadOnly = true;
             this.Client_Address.Size = new System.Drawing.Size(277, 136);
             this.Client_Address.TabIndex = 12;
             // 
@@ -138,25 +136,22 @@ namespace day_away_planner.Views
             this.Company_Email.Location = new System.Drawing.Point(215, 213);
             this.Company_Email.Multiline = true;
             this.Company_Email.Name = "Company_Email";
-            this.Company_Email.ReadOnly = true;
             this.Company_Email.Size = new System.Drawing.Size(277, 28);
             this.Company_Email.TabIndex = 5;
             // 
-            // Company_Phone
+            // Client_Department
             // 
-            this.Company_Phone.Location = new System.Drawing.Point(215, 163);
-            this.Company_Phone.Multiline = true;
-            this.Company_Phone.Name = "Company_Phone";
-            this.Company_Phone.ReadOnly = true;
-            this.Company_Phone.Size = new System.Drawing.Size(277, 29);
-            this.Company_Phone.TabIndex = 6;
+            this.Client_Department.Location = new System.Drawing.Point(215, 163);
+            this.Client_Department.Multiline = true;
+            this.Client_Department.Name = "Client_Department";
+            this.Client_Department.Size = new System.Drawing.Size(277, 29);
+            this.Client_Department.TabIndex = 6;
             // 
             // Company_Name
             // 
             this.Company_Name.Location = new System.Drawing.Point(215, 112);
             this.Company_Name.Multiline = true;
             this.Company_Name.Name = "Company_Name";
-            this.Company_Name.ReadOnly = true;
             this.Company_Name.Size = new System.Drawing.Size(277, 28);
             this.Company_Name.TabIndex = 7;
             // 
@@ -165,7 +160,6 @@ namespace day_away_planner.Views
             this.Client_Name.Location = new System.Drawing.Point(215, 66);
             this.Client_Name.Multiline = true;
             this.Client_Name.Name = "Client_Name";
-            this.Client_Name.ReadOnly = true;
             this.Client_Name.Size = new System.Drawing.Size(277, 27);
             this.Client_Name.TabIndex = 1;
             // 
@@ -180,10 +174,10 @@ namespace day_away_planner.Views
             this.Controls.Add(this.Clnt_booking_details);
             this.Controls.Add(this.Company_Bookings);
             this.Controls.Add(this.Company_Name);
-            this.Controls.Add(this.Company_Phone);
+            this.Controls.Add(this.Client_Department);
             this.Controls.Add(this.Company_Email);
             this.Controls.Add(this.Cmp_Email);
-            this.Controls.Add(this.Cmp_phone);
+            this.Controls.Add(this.Department);
             this.Controls.Add(this.Cmp_Name);
             this.Controls.Add(this.Client_Name);
             this.Controls.Add(this.Clnt_Name);
@@ -199,16 +193,16 @@ namespace day_away_planner.Views
 
         private System.Windows.Forms.Label Clnt_Name;
         private System.Windows.Forms.Label Cmp_Name;
-        private System.Windows.Forms.Label Cmp_phone;
+        private System.Windows.Forms.Label Department;
         private System.Windows.Forms.Label Cmp_Email;
-        private System.Windows.Forms.TextBox Company_Bookings;
         private System.Windows.Forms.Label Clnt_booking_details;
-        private System.Windows.Forms.TextBox Client_Address;
         private System.Windows.Forms.Label Clnt_Address;
         private System.Windows.Forms.Button clientNewbooking;
-        private System.Windows.Forms.TextBox Company_Email;
-        private System.Windows.Forms.TextBox Company_Phone;
-        private System.Windows.Forms.TextBox Company_Name;
-        private System.Windows.Forms.TextBox Client_Name;
+        public System.Windows.Forms.TextBox Company_Bookings;
+        public System.Windows.Forms.TextBox Client_Address;
+        public System.Windows.Forms.TextBox Company_Email;
+        public System.Windows.Forms.TextBox Client_Department;
+        public System.Windows.Forms.TextBox Company_Name;
+        public System.Windows.Forms.TextBox Client_Name;
     }
 }
