@@ -30,20 +30,18 @@ namespace day_away_planner.Views
         private void InitializeComponent()
         {
             this.Clnt_Name = new System.Windows.Forms.Label();
-            this.Client_Name = new System.Windows.Forms.TextBox();
             this.Cmp_Name = new System.Windows.Forms.Label();
             this.Cmp_phone = new System.Windows.Forms.Label();
             this.Cmp_Email = new System.Windows.Forms.Label();
-            this.Company_Email = new System.Windows.Forms.TextBox();
-            this.Company_Phone = new System.Windows.Forms.TextBox();
-            this.Company_Name = new System.Windows.Forms.TextBox();
             this.Company_Bookings = new System.Windows.Forms.TextBox();
             this.Clnt_booking_details = new System.Windows.Forms.Label();
-            this.Clnt_booking_date = new System.Windows.Forms.Label();
-            this.Clnt_Booked_date = new System.Windows.Forms.TextBox();
             this.Client_Address = new System.Windows.Forms.TextBox();
             this.Clnt_Address = new System.Windows.Forms.Label();
             this.clientNewbooking = new System.Windows.Forms.Button();
+            this.Company_Email = new System.Windows.Forms.TextBox();
+            this.Company_Phone = new System.Windows.Forms.TextBox();
+            this.Company_Name = new System.Windows.Forms.TextBox();
+            this.Client_Name = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // Clnt_Name
@@ -55,15 +53,6 @@ namespace day_away_planner.Views
             this.Clnt_Name.Size = new System.Drawing.Size(96, 20);
             this.Clnt_Name.TabIndex = 0;
             this.Clnt_Name.Text = "ClientName";
-            // 
-            // Client_Name
-            // 
-            this.Client_Name.Location = new System.Drawing.Point(215, 66);
-            this.Client_Name.Multiline = true;
-            this.Client_Name.Name = "Client_Name";
-            this.Client_Name.ReadOnly = true;
-            this.Client_Name.Size = new System.Drawing.Size(277, 27);
-            this.Client_Name.TabIndex = 1;
             // 
             // Cmp_Name
             // 
@@ -95,6 +84,55 @@ namespace day_away_planner.Views
             this.Cmp_Email.TabIndex = 4;
             this.Cmp_Email.Text = "Email";
             // 
+            // Company_Bookings
+            // 
+            this.Company_Bookings.Location = new System.Drawing.Point(632, 66);
+            this.Company_Bookings.Multiline = true;
+            this.Company_Bookings.Name = "Company_Bookings";
+            this.Company_Bookings.ReadOnly = true;
+            this.Company_Bookings.Size = new System.Drawing.Size(493, 359);
+            this.Company_Bookings.TabIndex = 8;
+            // 
+            // Clnt_booking_details
+            // 
+            this.Clnt_booking_details.AutoSize = true;
+            this.Clnt_booking_details.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Clnt_booking_details.Location = new System.Drawing.Point(628, 22);
+            this.Clnt_booking_details.Name = "Clnt_booking_details";
+            this.Clnt_booking_details.Size = new System.Drawing.Size(197, 20);
+            this.Clnt_booking_details.TabIndex = 9;
+            this.Clnt_booking_details.Text = "Client Booking Details";
+            // 
+            // Client_Address
+            // 
+            this.Client_Address.Location = new System.Drawing.Point(215, 289);
+            this.Client_Address.Multiline = true;
+            this.Client_Address.Name = "Client_Address";
+            this.Client_Address.ReadOnly = true;
+            this.Client_Address.Size = new System.Drawing.Size(277, 136);
+            this.Client_Address.TabIndex = 12;
+            // 
+            // Clnt_Address
+            // 
+            this.Clnt_Address.AutoSize = true;
+            this.Clnt_Address.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Clnt_Address.Location = new System.Drawing.Point(47, 289);
+            this.Clnt_Address.Name = "Clnt_Address";
+            this.Clnt_Address.Size = new System.Drawing.Size(71, 20);
+            this.Clnt_Address.TabIndex = 13;
+            this.Clnt_Address.Text = "Address";
+            // 
+            // clientNewbooking
+            // 
+            this.clientNewbooking.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clientNewbooking.Location = new System.Drawing.Point(895, 486);
+            this.clientNewbooking.Name = "clientNewbooking";
+            this.clientNewbooking.Size = new System.Drawing.Size(172, 34);
+            this.clientNewbooking.TabIndex = 14;
+            this.clientNewbooking.Text = "Create New Booking";
+            this.clientNewbooking.UseVisualStyleBackColor = true;
+            this.clientNewbooking.Click += new System.EventHandler(this.clientNewbooking_Click);
+            // 
             // Company_Email
             // 
             this.Company_Email.Location = new System.Drawing.Point(215, 213);
@@ -122,84 +160,23 @@ namespace day_away_planner.Views
             this.Company_Name.Size = new System.Drawing.Size(277, 28);
             this.Company_Name.TabIndex = 7;
             // 
-            // Company_Bookings
+            // Client_Name
             // 
-            this.Company_Bookings.Location = new System.Drawing.Point(632, 66);
-            this.Company_Bookings.Multiline = true;
-            this.Company_Bookings.Name = "Company_Bookings";
-            this.Company_Bookings.ReadOnly = true;
-            this.Company_Bookings.Size = new System.Drawing.Size(493, 359);
-            this.Company_Bookings.TabIndex = 8;
-            // 
-            // Clnt_booking_details
-            // 
-            this.Clnt_booking_details.AutoSize = true;
-            this.Clnt_booking_details.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Clnt_booking_details.Location = new System.Drawing.Point(628, 22);
-            this.Clnt_booking_details.Name = "Clnt_booking_details";
-            this.Clnt_booking_details.Size = new System.Drawing.Size(197, 20);
-            this.Clnt_booking_details.TabIndex = 9;
-            this.Clnt_booking_details.Text = "Client Booking Details";
-            // 
-            // Clnt_booking_date
-            // 
-            this.Clnt_booking_date.AutoSize = true;
-            this.Clnt_booking_date.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Clnt_booking_date.Location = new System.Drawing.Point(628, 483);
-            this.Clnt_booking_date.Name = "Clnt_booking_date";
-            this.Clnt_booking_date.Size = new System.Drawing.Size(123, 20);
-            this.Clnt_booking_date.TabIndex = 10;
-            this.Clnt_booking_date.Text = "Booked Date ";
-            // 
-            // Clnt_Booked_date
-            // 
-            this.Clnt_Booked_date.Location = new System.Drawing.Point(757, 483);
-            this.Clnt_Booked_date.Multiline = true;
-            this.Clnt_Booked_date.Name = "Clnt_Booked_date";
-            this.Clnt_Booked_date.ReadOnly = true;
-            this.Clnt_Booked_date.Size = new System.Drawing.Size(163, 30);
-            this.Clnt_Booked_date.TabIndex = 11;
-            // 
-            // Client_Address
-            // 
-            this.Client_Address.Location = new System.Drawing.Point(215, 289);
-            this.Client_Address.Multiline = true;
-            this.Client_Address.Name = "Client_Address";
-            this.Client_Address.ReadOnly = true;
-            this.Client_Address.Size = new System.Drawing.Size(277, 136);
-            this.Client_Address.TabIndex = 12;
-            // 
-            // Clnt_Address
-            // 
-            this.Clnt_Address.AutoSize = true;
-            this.Clnt_Address.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Clnt_Address.Location = new System.Drawing.Point(47, 289);
-            this.Clnt_Address.Name = "Clnt_Address";
-            this.Clnt_Address.Size = new System.Drawing.Size(71, 20);
-            this.Clnt_Address.TabIndex = 13;
-            this.Clnt_Address.Text = "Address";
-            // 
-            // clientNewbooking
-            // 
-            this.clientNewbooking.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.clientNewbooking.Location = new System.Drawing.Point(924, 575);
-            this.clientNewbooking.Name = "clientNewbooking";
-            this.clientNewbooking.Size = new System.Drawing.Size(172, 34);
-            this.clientNewbooking.TabIndex = 14;
-            this.clientNewbooking.Text = "Create New Booking";
-            this.clientNewbooking.UseVisualStyleBackColor = true;
-            this.clientNewbooking.Click += new System.EventHandler(this.clientNewbooking_Click);
+            this.Client_Name.Location = new System.Drawing.Point(215, 66);
+            this.Client_Name.Multiline = true;
+            this.Client_Name.Name = "Client_Name";
+            this.Client_Name.ReadOnly = true;
+            this.Client_Name.Size = new System.Drawing.Size(277, 27);
+            this.Client_Name.TabIndex = 1;
             // 
             // Clientbookingdetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1156, 639);
+            this.ClientSize = new System.Drawing.Size(1156, 563);
             this.Controls.Add(this.clientNewbooking);
             this.Controls.Add(this.Clnt_Address);
             this.Controls.Add(this.Client_Address);
-            this.Controls.Add(this.Clnt_Booked_date);
-            this.Controls.Add(this.Clnt_booking_date);
             this.Controls.Add(this.Clnt_booking_details);
             this.Controls.Add(this.Company_Bookings);
             this.Controls.Add(this.Company_Name);
@@ -221,19 +198,17 @@ namespace day_away_planner.Views
         #endregion
 
         private System.Windows.Forms.Label Clnt_Name;
-        private System.Windows.Forms.TextBox Client_Name;
         private System.Windows.Forms.Label Cmp_Name;
         private System.Windows.Forms.Label Cmp_phone;
         private System.Windows.Forms.Label Cmp_Email;
-        private System.Windows.Forms.TextBox Company_Email;
-        private System.Windows.Forms.TextBox Company_Phone;
-        private System.Windows.Forms.TextBox Company_Name;
         private System.Windows.Forms.TextBox Company_Bookings;
         private System.Windows.Forms.Label Clnt_booking_details;
-        private System.Windows.Forms.Label Clnt_booking_date;
-        private System.Windows.Forms.TextBox Clnt_Booked_date;
         private System.Windows.Forms.TextBox Client_Address;
         private System.Windows.Forms.Label Clnt_Address;
         private System.Windows.Forms.Button clientNewbooking;
+        private System.Windows.Forms.TextBox Company_Email;
+        private System.Windows.Forms.TextBox Company_Phone;
+        private System.Windows.Forms.TextBox Company_Name;
+        private System.Windows.Forms.TextBox Client_Name;
     }
 }
