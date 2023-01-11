@@ -70,9 +70,9 @@ namespace day_away_planner.Views
             this.Department.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Department.Location = new System.Drawing.Point(46, 163);
             this.Department.Name = "Department";
-            this.Department.Size = new System.Drawing.Size(56, 20);
+            this.Department.Size = new System.Drawing.Size(97, 20);
             this.Department.TabIndex = 3;
-            this.Department.Text = "Phone";
+            this.Department.Text = "Department";
             // 
             // Cmp_Email
             // 
