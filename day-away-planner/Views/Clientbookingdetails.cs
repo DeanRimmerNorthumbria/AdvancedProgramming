@@ -12,6 +12,8 @@ namespace day_away_planner.Views
 {
     public partial class Clientbookingdetails : Form
     {
+        private BookingWindow window;
+
         public Clientbookingdetails()
         {
             InitializeComponent();
@@ -24,9 +26,9 @@ namespace day_away_planner.Views
 
         private void clientNewbooking_Click(object sender, EventArgs e)
         {
-            //NewBooking d = new NewBooking(window);
-            //d.Show();
-            //push the current changes to your branch and then we can merge develop in for that part - sorry for the long response times trying to respond to emails at the same time, NP thank you..
+            NewBooking d = new NewBooking(window);
+            d.Show();
+            
         }
     }
 }

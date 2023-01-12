@@ -65,3 +65,5 @@ C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\obj\Debug\day
 C:\Users\Dean\Source\Repos\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Views.Clientbookingdetails.resources
 C:\Users\Dean\Source\Repos\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Views.NewBooking.resources
 C:\Users\Dean\Source\Repos\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Views.NewClient.resources
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\obj\Debug\day_away_planner.Views.NewBooking.resources
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\obj\Debug\day_away_planner.Views.NewClient.resources
