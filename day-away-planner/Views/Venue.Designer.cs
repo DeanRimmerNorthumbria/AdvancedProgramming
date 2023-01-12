@@ -46,7 +46,7 @@
             this.venueGridView.ReadOnly = true;
             this.venueGridView.Size = new System.Drawing.Size(776, 411);
             this.venueGridView.TabIndex = 0;
-            this.venueGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.venueGridView_CellContentClick);
+            this.venueGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.venueGridView_RowCellDoubleClick);
             // 
             // back
             // 
