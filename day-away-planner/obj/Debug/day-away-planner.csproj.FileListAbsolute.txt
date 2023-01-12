@@ -60,28 +60,10 @@ C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\obj\Debug\day
 C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\obj\Debug\day_away_planner.Views.Activity.resources
 C:\Users\Dean\source\repos\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Views.Activity.resources
 C:\Users\Dean\source\repos\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Views.Booking.resources
-C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\bin\Debug\Database.mdf
-C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\bin\Debug\Database_log.ldf
-C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\bin\Debug\day-away-planner.exe.config
-C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\bin\Debug\day-away-planner.exe
-C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\bin\Debug\day-away-planner.pdb
-C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\bin\Debug\EntityFramework.dll
-C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\bin\Debug\EntityFramework.xml
-C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\day-away-planner.csproj.AssemblyReference.cache
-C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\day-away-planner.csproj.SuggestedBindingRedirects.cache
-C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Views.Activity.resources
-C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Views.Booking.resources
-C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Views.Client.resources
-C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Main.resources
-C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Migrations.SeedInitialVenueData.resources
-C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Properties.Resources.resources
-C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Views.Venue.resources
-C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\day-away-planner.csproj.GenerateResource.cache
-C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\day-away-planner.csproj.CoreCompileInputs.cache
-C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\day-away-planner.csproj.CopyComplete
-C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\day-away-planner.exe
-C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\day-away-planner.pdb
-C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Views.NewBooking.resources
-C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Views.NewClient.resources
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\obj\Debug\day_away_planner.Views.Booking.resources
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\obj\Debug\day_away_planner.Views.Clientbookingdetails.resources
+C:\Users\Dean\Source\Repos\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Views.Clientbookingdetails.resources
+C:\Users\Dean\Source\Repos\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Views.NewBooking.resources
+C:\Users\Dean\Source\Repos\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Views.NewClient.resources
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\obj\Debug\day_away_planner.Views.NewBooking.resources
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\day-away-planner\obj\Debug\day_away_planner.Views.NewClient.resources

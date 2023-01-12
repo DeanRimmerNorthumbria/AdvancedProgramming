@@ -74,9 +74,14 @@ namespace day_away_planner.Views
             c.Show();
         }
 
+
         private void clientGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            Clientbookingdetails cd = new Clientbookingdetails();
+            cd.Client_Name.Text = this.clientGridView.CurrentRow.Cells[1].Value.ToString();
+            cd.Company_Name.Text = this.clientGridView.CurrentRow.Cells[2].Value.ToString();
+            cd.Client_Department.Text = this.clientGridView.CurrentRow.Cells[3].Value.ToString();
+            cd.ShowDialog();
         }
     }
 }
