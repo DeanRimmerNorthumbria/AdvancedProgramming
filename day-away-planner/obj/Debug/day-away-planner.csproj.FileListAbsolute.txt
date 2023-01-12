@@ -88,3 +88,5 @@ C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\d
 C:\Users\Dean\Source\Repos\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Views.NewBooking.resources
 C:\Users\Dean\Source\Repos\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Views.NewClient.resources
 C:\Users\Dean\source\repos\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Views.Clientbookingdetails.resources
+C:\Users\Dean\source\repos\AdvancedProgramming\day-away-planner\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Dean\source\repos\AdvancedProgramming\day-away-planner\bin\Debug\System.Data.SqlClient.xml

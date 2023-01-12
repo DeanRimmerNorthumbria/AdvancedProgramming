@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -18,6 +19,11 @@ namespace day_away_planner
         [STAThread]
         static void Main(String[] args)
         {
+            string path = AppDomain.CurrentDomain.BaseDirectory;
+            string parentStep1 = System.IO.Directory.GetParent(path).FullName;
+            string parentStep2 = System.IO.Directory.GetParent(parentStep1).FullName;
+            string parentStep3 = System.IO.Directory.GetParent(parentStep2).FullName;
+            AppDomain.CurrentDomain.SetData("DataDirectory", parentStep3);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Main());
