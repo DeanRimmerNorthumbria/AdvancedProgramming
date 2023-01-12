@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data;
 using System.Data.Entity.Migrations;
 using System.Linq;
 using System.Security.AccessControl;
@@ -57,13 +58,25 @@ namespace day_away_planner.Presenter
             Models.Booking newBooking = new Models.Booking() {BookingActivityID = activity.ActivityID, BookingClientID = client.ClientID, BookingVenueID = venue.VenueID, BookingConfirmation = false, BookingCancellation = false, BookingDate = DateTime.Now, BookingEventDate = parsed };
             MyDBEntities context = new MyDBEntities();
 
-            context.Bookings.Add(newBooking);
+            using (var bookingContext = new MyDBEntities())
+            {
+                var transaction = bookingContext.Database.BeginTransaction(IsolationLevel.Serializable);
 
-            Models.Client clientToUpdate = context.Clients.Find(client.ClientID);
-            clientToUpdate.ClientDebt += doubleCost;
-            context.Clients.AddOrUpdate(clientToUpdate);
+                bookingContext.Bookings.AddOrUpdate(x => x.BookingID, newBooking);
+                bookingContext.SaveChanges();
+                transaction.Commit();
+            }
 
-            context.SaveChanges();
+            using (var clientContext = new MyDBEntities())
+            {
+                Models.Client clientToUpdate = context.Clients.Find(client.ClientID);
+                clientToUpdate.ClientDebt += doubleCost;
+                clientContext.Clients.AddOrUpdate(clientToUpdate);
+
+                clientContext.SaveChanges();
+            }
+
+            
             
             return true;
 
