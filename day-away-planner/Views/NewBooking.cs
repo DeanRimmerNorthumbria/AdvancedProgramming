@@ -8,6 +8,8 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.Design;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 
 namespace day_away_planner.Views
 {
@@ -57,7 +59,29 @@ namespace day_away_planner.Views
 
         private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
         {
-            checkChanged();
+            List<dynamic> bookingList = window.BookingList();
+            foreach(var b in bookingList)
+            {
+                string date = "";
+                if(isDateCorrect && isTimeCorrect)
+                {
+                    date = textBox4.Text;
+                }
+
+                DateTime bDateTime = b.BookingEventDate.Date;
+                string singleBookingDateOnly = bDateTime.ToString("d");
+
+                if (singleBookingDateOnly == date && b.venueName == window.BookingVenue.VenueName && checkBox1.Checked == true)
+                {
+                    MessageBox.Show("Venue is not available at this date, please select another date or venue");
+                    checkBox1.Checked = false;
+                }
+                else
+                {
+                    checkChanged();
+                }  
+            }
+            
         }
 
         private void button2_Click_1(object sender, EventArgs e)
@@ -92,6 +116,7 @@ namespace day_away_planner.Views
 
         private void selectActivity_Click(object sender, EventArgs e)
         {
+            checkBox1.Checked = false;
             Activity a = new Activity(window);
             a.Show();
         }
@@ -103,6 +128,7 @@ namespace day_away_planner.Views
 
         private void selectVenue_Click(object sender, EventArgs e)
         {
+            checkBox1.Checked = false;
             Venue v = new Venue(window);
             v.Show();
         }
@@ -124,6 +150,8 @@ namespace day_away_planner.Views
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
+            isTimeCorrect= false;
+            checkBox1.Checked = false;
             string text = textBox3.Text;
             var result = Regex.Match(text, "^[0-2][0-9]:[0-5][0-9]$", RegexOptions.IgnoreCase);
 
@@ -145,8 +173,10 @@ namespace day_away_planner.Views
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
+            isDateCorrect = false;
+            checkBox1.Checked = false;
             string text = textBox4.Text;
-            var result = Regex.Match(text, "^[0-3][0-9]/[0-1][0-2]/[1-2][0-9][0-9][0-9]$", RegexOptions.IgnoreCase);
+            var result = Regex.Match(text, "^[0-3][0-9]/[0-1][0-9]/[1-2][0-9][0-9][0-9]$", RegexOptions.IgnoreCase);
 
             if (result.Success)
             {
