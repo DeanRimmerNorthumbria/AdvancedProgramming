@@ -14,6 +14,8 @@ namespace day_away_planner.Views
 
         }
 
+        public Models.Venue BookingVenue { get; set; }
+
         public Models.Client BookingClient { get; set; }
 
         public Models.Activity BookingActivity { get; set; }
@@ -26,6 +28,14 @@ namespace day_away_planner.Views
         public List<dynamic> BookingFilter(List<bool> filters)
         {
             return booking.BookingFilter(filters);
+        }
+
+        public bool BookingCreate(Models.Client client, Models.Activity activity, Models.Venue venue, string date, string time, string cost, string extras)
+        {
+              
+            Presenter.Booking bookingPresenter = new Presenter.Booking();
+            bookingPresenter.BookingCreate(client, activity, venue, date, time, cost, extras);
+            return true;
         }
 
     }
