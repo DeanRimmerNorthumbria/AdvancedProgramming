@@ -311,9 +311,9 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(424, 169);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(61, 13);
+            this.label10.Size = new System.Drawing.Size(65, 13);
             this.label10.TabIndex = 35;
-            this.label10.Text = "dd:mm:yyyy";
+            this.label10.Text = "dd/mm/yyyy";
             // 
             // label11
             // 
