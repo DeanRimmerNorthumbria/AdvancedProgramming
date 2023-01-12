@@ -1,7 +1,0 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
-
-/.vs/day-away-planner/FileContentIndex
-/.vs/day-away-planner/v17/.suo
-/day-away-planner/obj/Debug/day-away-planner.csproj.AssemblyReference.cache

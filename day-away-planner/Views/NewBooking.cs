@@ -59,29 +59,7 @@ namespace day_away_planner.Views
 
         private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
         {
-            List<dynamic> bookingList = window.BookingList();
-            foreach(var b in bookingList)
-            {
-                string date = "";
-                if(isDateCorrect && isTimeCorrect)
-                {
-                    date = textBox4.Text;
-                }
-
-                DateTime bDateTime = b.BookingEventDate.Date;
-                string singleBookingDateOnly = bDateTime.ToString("d");
-
-                if (singleBookingDateOnly == date && b.venueName == window.BookingVenue.VenueName && checkBox1.Checked == true)
-                {
-                    MessageBox.Show("Venue is not available at this date, please select another date or venue");
-                    checkBox1.Checked = false;
-                }
-                else
-                {
-                    checkChanged();
-                }  
-            }
-            
+            button2.Enabled = checkBox1.Checked;
         }
 
         private void button2_Click_1(object sender, EventArgs e)
@@ -257,5 +235,6 @@ namespace day_away_planner.Views
         {
 
         }
+
     }
 }
