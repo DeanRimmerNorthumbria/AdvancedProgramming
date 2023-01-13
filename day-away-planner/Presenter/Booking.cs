@@ -1,10 +1,12 @@
 ﻿using day_away_planner.Models;
+using day_away_planner.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.Entity.Migrations;
 using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
@@ -72,7 +74,6 @@ namespace day_away_planner.Presenter
                 Models.Client clientToUpdate = context.Clients.Find(client.ClientID);
                 clientToUpdate.ClientDebt += doubleCost;
                 clientContext.Clients.AddOrUpdate(clientToUpdate);
-
                 clientContext.SaveChanges();
             }
 
@@ -81,6 +82,32 @@ namespace day_away_planner.Presenter
             return true;
 
         }
+
+        public void BookingToPay(int bookingID)
+        {
+            Models.Booking bookingToConfirm;
+            using (var bookingConfirmContext = new MyDBEntities())
+            {
+                bookingToConfirm = bookingConfirmContext.Bookings.Find(bookingID);
+                bookingToConfirm.BookingConfirmation = true;
+                bookingConfirmContext.Bookings.AddOrUpdate(bookingToConfirm);
+                bookingConfirmContext.SaveChanges();
+            }
+
+            using (var clientDebtContext = new MyDBEntities())
+            {
+                Models.Client clientToUpdate = clientDebtContext.Clients.Find(bookingToConfirm.BookingClientID);
+                Models.Venue venue = clientDebtContext.Venues.Find(bookingToConfirm.BookingVenueID);
+                Models.Activity activity = clientDebtContext.Activities.Find(bookingToConfirm.BookingActivityID);
+                double costPaid = venue.VenueCost + activity.ActivityCost;
+                if((clientToUpdate.ClientDebt -= costPaid) >= 0)
+                {
+                    clientDebtContext.Clients.AddOrUpdate(clientToUpdate);
+                    clientDebtContext.SaveChanges();
+                }
+            }
+        }
+
         public List<dynamic> BookingFilter(List<bool> filters)
         {
             using (var context = new MyDBEntities())

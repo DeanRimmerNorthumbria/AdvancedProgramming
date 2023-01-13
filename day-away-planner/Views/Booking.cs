@@ -29,12 +29,26 @@ namespace day_away_planner.Views
 
         private void Booking_Load(object sender, EventArgs e)
         {
-            bookingGridView.DataSource = window.BookingList();
+            DataGridViewButtonColumn bookingButton = new DataGridViewButtonColumn();
+            bookingButton.Name = "PayBooking";
+            bookingButton.HeaderText = "Pay Booking";
+            bookingButton.Text = "Pay Booking";
+            bookingButton.UseColumnTextForButtonValue = true;
+            bookingGridView.Columns.Insert(0, bookingButton);
+            bookingGridView.DataSource = window.BookingList();    
         }
 
         private void bookingGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            if (bookingGridView.Columns[e.ColumnIndex].Name == "PayBooking")
+            {
+                DialogResult dr = MessageBox.Show("Has this booking been paid and confirmed?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dr == DialogResult.Yes)
+                {
+                    int bookingID = (Int32)bookingGridView.Rows[e.RowIndex].Cells[1].Value;
+                    window.PayBooking(bookingID);  
+                }
+            }
         }
 
         private void eventUnpaid_CheckedChanged(object sender, EventArgs e)
