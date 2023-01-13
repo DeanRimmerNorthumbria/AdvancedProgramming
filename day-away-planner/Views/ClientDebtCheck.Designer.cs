@@ -44,45 +44,50 @@ namespace day_away_planner.Views
             // 
             this.Clt_Booked_Date.AutoSize = true;
             this.Clt_Booked_Date.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Clt_Booked_Date.Location = new System.Drawing.Point(12, 190);
+            this.Clt_Booked_Date.Location = new System.Drawing.Point(9, 154);
+            this.Clt_Booked_Date.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Clt_Booked_Date.Name = "Clt_Booked_Date";
-            this.Clt_Booked_Date.Size = new System.Drawing.Size(154, 20);
+            this.Clt_Booked_Date.Size = new System.Drawing.Size(129, 17);
             this.Clt_Booked_Date.TabIndex = 0;
             this.Clt_Booked_Date.Text = "Client Booked Date";
             // 
             // Client_Booked_Date
             // 
-            this.Client_Booked_Date.Location = new System.Drawing.Point(228, 173);
+            this.Client_Booked_Date.Location = new System.Drawing.Point(171, 141);
+            this.Client_Booked_Date.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Client_Booked_Date.Multiline = true;
             this.Client_Booked_Date.Name = "Client_Booked_Date";
             this.Client_Booked_Date.ReadOnly = true;
-            this.Client_Booked_Date.Size = new System.Drawing.Size(187, 48);
+            this.Client_Booked_Date.Size = new System.Drawing.Size(141, 40);
             this.Client_Booked_Date.TabIndex = 1;
             // 
             // Clt_debt
             // 
             this.Clt_debt.AutoSize = true;
             this.Clt_debt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Clt_debt.Location = new System.Drawing.Point(52, 260);
+            this.Clt_debt.Location = new System.Drawing.Point(39, 211);
+            this.Clt_debt.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Clt_debt.Name = "Clt_debt";
-            this.Clt_debt.Size = new System.Drawing.Size(97, 20);
+            this.Clt_debt.Size = new System.Drawing.Size(81, 17);
             this.Clt_debt.TabIndex = 2;
             this.Clt_debt.Text = "Client_Debt";
             // 
             // Client_Debt
             // 
-            this.Client_Debt.Location = new System.Drawing.Point(228, 260);
+            this.Client_Debt.Location = new System.Drawing.Point(171, 211);
+            this.Client_Debt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Client_Debt.Multiline = true;
             this.Client_Debt.Name = "Client_Debt";
             this.Client_Debt.ReadOnly = true;
-            this.Client_Debt.Size = new System.Drawing.Size(150, 29);
+            this.Client_Debt.Size = new System.Drawing.Size(114, 24);
             this.Client_Debt.TabIndex = 3;
             // 
             // Check_Debt
             // 
-            this.Check_Debt.Location = new System.Drawing.Point(171, 338);
+            this.Check_Debt.Location = new System.Drawing.Point(128, 275);
+            this.Check_Debt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Check_Debt.Name = "Check_Debt";
-            this.Check_Debt.Size = new System.Drawing.Size(138, 54);
+            this.Check_Debt.Size = new System.Drawing.Size(104, 44);
             this.Check_Debt.TabIndex = 6;
             this.Check_Debt.Text = "CheckDebt";
             this.Check_Debt.UseVisualStyleBackColor = true;
@@ -92,45 +97,49 @@ namespace day_away_planner.Views
             // 
             this.Clt_name.AutoSize = true;
             this.Clt_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Clt_name.Location = new System.Drawing.Point(52, 103);
+            this.Clt_name.Location = new System.Drawing.Point(39, 84);
+            this.Clt_name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Clt_name.Name = "Clt_name";
-            this.Clt_name.Size = new System.Drawing.Size(101, 20);
+            this.Clt_name.Size = new System.Drawing.Size(84, 17);
             this.Clt_name.TabIndex = 7;
             this.Clt_name.Text = "Client Name";
             // 
             // Client_Name
             // 
-            this.Client_Name.Location = new System.Drawing.Point(228, 103);
+            this.Client_Name.Location = new System.Drawing.Point(171, 84);
+            this.Client_Name.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Client_Name.Multiline = true;
             this.Client_Name.Name = "Client_Name";
             this.Client_Name.ReadOnly = true;
-            this.Client_Name.Size = new System.Drawing.Size(187, 31);
+            this.Client_Name.Size = new System.Drawing.Size(141, 26);
             this.Client_Name.TabIndex = 8;
             // 
             // Clt_company
             // 
             this.Clt_company.AutoSize = true;
             this.Clt_company.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Clt_company.Location = new System.Drawing.Point(52, 42);
+            this.Clt_company.Location = new System.Drawing.Point(39, 34);
+            this.Clt_company.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Clt_company.Name = "Clt_company";
-            this.Clt_company.Size = new System.Drawing.Size(127, 20);
+            this.Clt_company.Size = new System.Drawing.Size(106, 17);
             this.Clt_company.TabIndex = 9;
             this.Clt_company.Text = "Client Company";
             // 
             // Client_Company
             // 
-            this.Client_Company.Location = new System.Drawing.Point(228, 42);
+            this.Client_Company.Location = new System.Drawing.Point(171, 34);
+            this.Client_Company.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Client_Company.Multiline = true;
             this.Client_Company.Name = "Client_Company";
             this.Client_Company.ReadOnly = true;
-            this.Client_Company.Size = new System.Drawing.Size(187, 31);
+            this.Client_Company.Size = new System.Drawing.Size(141, 26);
             this.Client_Company.TabIndex = 10;
             // 
             // ClientDebtCheck
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(499, 450);
+            this.ClientSize = new System.Drawing.Size(374, 366);
             this.Controls.Add(this.Client_Company);
             this.Controls.Add(this.Clt_company);
             this.Controls.Add(this.Client_Name);
@@ -140,8 +149,10 @@ namespace day_away_planner.Views
             this.Controls.Add(this.Clt_debt);
             this.Controls.Add(this.Client_Booked_Date);
             this.Controls.Add(this.Clt_Booked_Date);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ClientDebtCheck";
             this.Text = "ClientDebtCheck";
+            this.Load += new System.EventHandler(this.ClientDebtCheck_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

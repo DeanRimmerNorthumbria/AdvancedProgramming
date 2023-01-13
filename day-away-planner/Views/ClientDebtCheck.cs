@@ -57,6 +57,11 @@ namespace day_away_planner.Views
                 MessageBox.Show("Invalid debt value entered");
             }
         }
+
+        private void ClientDebtCheck_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

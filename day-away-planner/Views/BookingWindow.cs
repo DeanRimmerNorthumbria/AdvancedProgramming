@@ -30,6 +30,12 @@ namespace day_away_planner.Views
             return booking.BookingFilter(filters);
         }
 
+        public void PayBooking(int bookingID)
+        {
+            Presenter.Booking bp = new Presenter.Booking();
+            bp.BookingToPay(bookingID);
+        }
+
         public bool BookingCreate(Models.Client client, Models.Activity activity, Models.Venue venue, string date, string time, string cost, string extras)
         {
               
