@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Globalization;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,31 +13,50 @@ namespace day_away_planner.Views
 {
     public partial class ClientDebtCheck : Form
     {
-        public ClientDebtCheck()
+        string bookingID;
+        public ClientDebtCheck(string bID)
         {
+            this.bookingID = bID;
             InitializeComponent();
         }
 
         private void Check_Debt_Click(object sender, EventArgs e)
         {
-            DateTime currentDate = DateTime.Now;
-            DateTime Client_Booked_Date = DateTime.Parse("12/12/2021");
-            int daysSinceBooking = (currentDate - Client_Booked_Date).Days;
+            int bookingIntID = int.Parse(bookingID);
+            Models.MyDBEntities context = new Models.MyDBEntities();
+            Models.Booking bookingFind = context.Bookings.Find(bookingIntID);
+            DateTime bookingDateTime = bookingFind.BookingEventDate;
 
-
-            if (daysSinceBooking > 60)
+            double clientDebt;
+            if (double.TryParse(Client_Debt.Text, out clientDebt))
             {
-                    // Debt is more than 60 days overdue
-                    MessageBox.Show("Red flag: Debt is more than 60 days overdue");
+                if (clientDebt > 0)
+                {  
+                    DateTime currentDate = DateTime.Now;
+                    DateTime Client_Booked_Date = bookingDateTime;
+
+                        int daysSinceBooking = (currentDate - Client_Booked_Date).Days;
+                        if (daysSinceBooking > 60)
+                        {
+                            // Debt is more than 60 days overdue
+                            MessageBox.Show("Red flag: Debt is more than 60 days overdue");
+                        }
+                        else
+                        {
+                            // Debt is not overdue
+                            MessageBox.Show("Debt is not overdue");
+                        }
+                }
+                else
+                {
+                    MessageBox.Show("There is no debt");
+                }
             }
             else
             {
-                    // Debt is not overdue
-                    MessageBox.Show("Debt is not overdue");
+                MessageBox.Show("Invalid debt value entered");
             }
-
         }
-
     }
 }
 

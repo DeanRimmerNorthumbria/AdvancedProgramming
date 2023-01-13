@@ -34,7 +34,7 @@ namespace day_away_planner.Views
 
         private void bookingGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            ClientDebtCheck debt = new ClientDebtCheck();
+            ClientDebtCheck debt = new ClientDebtCheck(this.bookingGridView.Rows[e.RowIndex].Cells[0].Value.ToString());
             debt.Client_Booked_Date.Text = this.bookingGridView.CurrentRow.Cells[8].Value.ToString();
             debt.Client_Debt.Text = this.bookingGridView.CurrentRow.Cells[7].Value.ToString();
             debt.Client_Name.Text = this.bookingGridView.CurrentRow.Cells[5].Value.ToString();
