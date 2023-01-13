@@ -35,6 +35,7 @@ namespace day_away_planner.Views
             this.Client_Debt = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.Date = new System.Windows.Forms.Label();
+            this.Check_Debt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Clt_Booked_Date
@@ -92,11 +93,22 @@ namespace day_away_planner.Views
             this.Date.TabIndex = 5;
             this.Date.Text = "Today\'s Date";
             // 
+            // Check_Debt
+            // 
+            this.Check_Debt.Location = new System.Drawing.Point(544, 126);
+            this.Check_Debt.Name = "Check_Debt";
+            this.Check_Debt.Size = new System.Drawing.Size(121, 37);
+            this.Check_Debt.TabIndex = 6;
+            this.Check_Debt.Text = "CheckDebt";
+            this.Check_Debt.UseVisualStyleBackColor = true;
+            this.Check_Debt.Click += new System.EventHandler(this.Check_Debt_Click);
+            // 
             // ClientDebtCheck
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Check_Debt);
             this.Controls.Add(this.Date);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.Client_Debt);
@@ -118,5 +130,6 @@ namespace day_away_planner.Views
         public System.Windows.Forms.TextBox Client_Debt;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label Date;
+        private System.Windows.Forms.Button Check_Debt;
     }
 }
