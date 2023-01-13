@@ -40,6 +40,7 @@ namespace day_away_planner.Views
 
         private void bookingGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            
             if (bookingGridView.Columns[e.ColumnIndex].Name == "PayBooking")
             {
                 DialogResult dr = MessageBox.Show("Has this booking been paid and confirmed?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -48,6 +49,15 @@ namespace day_away_planner.Views
                     int bookingID = (Int32)bookingGridView.Rows[e.RowIndex].Cells[1].Value;
                     window.PayBooking(bookingID);  
                 }
+            }
+            else
+            {
+                ClientDebtCheck debt = new ClientDebtCheck(this.bookingGridView.Rows[e.RowIndex].Cells[1].Value.ToString());
+                debt.Client_Booked_Date.Text = this.bookingGridView.CurrentRow.Cells[9].Value.ToString();
+                debt.Client_Debt.Text = this.bookingGridView.CurrentRow.Cells[8].Value.ToString();
+                debt.Client_Name.Text = this.bookingGridView.CurrentRow.Cells[6].Value.ToString();
+                debt.Client_Company.Text = this.bookingGridView.CurrentRow.Cells[7].Value.ToString();
+                debt.ShowDialog();
             }
         }
 

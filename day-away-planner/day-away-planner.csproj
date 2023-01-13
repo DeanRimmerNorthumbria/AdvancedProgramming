@@ -111,6 +111,12 @@
       <DependentUpon>Clientbookingdetails.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\BookingWindow.cs" />
+    <Compile Include="Views\ClientDebtCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ClientDebtCheck.Designer.cs">
+      <DependentUpon>ClientDebtCheck.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\IBookingWindow.cs" />
     <Compile Include="Views\Main.cs">
       <SubType>Form</SubType>
@@ -156,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Clientbookingdetails.resx">
       <DependentUpon>Clientbookingdetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ClientDebtCheck.resx">
+      <DependentUpon>ClientDebtCheck.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
