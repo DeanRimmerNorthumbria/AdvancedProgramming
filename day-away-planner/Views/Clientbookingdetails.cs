@@ -12,7 +12,7 @@ namespace day_away_planner.Views
 {
     public partial class Clientbookingdetails : Form
     {
-        private BookingWindow window;
+        BookingWindow window = new BookingWindow();
 
         public Clientbookingdetails()
         {
