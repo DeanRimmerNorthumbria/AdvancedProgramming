@@ -23,16 +23,20 @@ namespace day_away_planner.Views
             DateTime Client_Booked_Date = DateTime.Parse("12/12/2021");
             int daysSinceBooking = (currentDate - Client_Booked_Date).Days;
 
+
             if (daysSinceBooking > 60)
             {
-                // Debt is more than 60 days overdue
-                MessageBox.Show("Red flag: Debt is more than 60 days overdue");
+                    // Debt is more than 60 days overdue
+                    MessageBox.Show("Red flag: Debt is more than 60 days overdue");
             }
             else
             {
-                // Debt is not overdue
-                MessageBox.Show("Debt is not overdue");
+                    // Debt is not overdue
+                    MessageBox.Show("Debt is not overdue");
             }
+
         }
+
     }
 }
+
