@@ -29,6 +29,7 @@ namespace day_away_planner.Views
         {
             Client c = new Client(window);
             c.Show();
+            checkChanged();
         }
 
         private void NewBooking_Load(object sender, EventArgs e)
@@ -45,21 +46,12 @@ namespace day_away_planner.Views
         {
             Client c = new Client(window);
             c.Show();
-        }
-
-        private void newClient_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_Click(object sender, EventArgs e)
-        {
-
+            checkChanged();
         }
 
         private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
         {
-            button2.Enabled = checkBox1.Checked;
+            checkChanged();
         }
 
         private void button2_Click_1(object sender, EventArgs e)
@@ -97,6 +89,7 @@ namespace day_away_planner.Views
             checkBox1.Checked = false;
             Activity a = new Activity(window);
             a.Show();
+            checkChanged();
         }
 
         private void what_Click(object sender, EventArgs e)
@@ -109,21 +102,12 @@ namespace day_away_planner.Views
             checkBox1.Checked = false;
             Venue v = new Venue(window);
             v.Show();
+            checkChanged();
         }
 
         private void where_Click(object sender, EventArgs e)
         {
             label12.Text = window.BookingVenue.VenueName + ", price: £" + window.BookingVenue.VenueCost;
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -179,7 +163,7 @@ namespace day_away_planner.Views
                 isExtraCostCorrect = true;
             }
 
-            if (isDateCorrect && isTimeCorrect && checkBox1.Checked && isExtraCostCorrect)
+            if (isDateCorrect && isTimeCorrect && checkBox1.Checked && isExtraCostCorrect && (window.BookingVenue != null) && (window.BookingClient != null) && (window.BookingActivity != null))
             {
                 button2.Enabled = true;
             }
@@ -225,16 +209,5 @@ namespace day_away_planner.Views
                 checkChanged();
             }
         }
-
-        private void label16_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label15_Click(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

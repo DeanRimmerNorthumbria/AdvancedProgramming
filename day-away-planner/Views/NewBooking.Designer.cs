@@ -121,6 +121,7 @@
             // 
             // textBox6
             // 
+            this.textBox6.Enabled = false;
             this.textBox6.Location = new System.Drawing.Point(257, 237);
             this.textBox6.Margin = new System.Windows.Forms.Padding(2);
             this.textBox6.Name = "textBox6";
@@ -166,7 +167,6 @@
             this.label7.Size = new System.Drawing.Size(60, 20);
             this.label7.TabIndex = 22;
             this.label7.Text = "Extras";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -245,7 +245,6 @@
             this.label8.Size = new System.Drawing.Size(57, 20);
             this.label8.TabIndex = 31;
             this.label8.Text = "Client";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // modifyClient
             // 
@@ -267,7 +266,6 @@
             this.newClient.TabIndex = 3;
             this.newClient.Text = "New Client";
             this.newClient.UseVisualStyleBackColor = true;
-            this.newClient.Click += new System.EventHandler(this.newClient_Click);
             // 
             // selectActivity
             // 
@@ -323,7 +321,6 @@
             this.label9.Size = new System.Drawing.Size(48, 15);
             this.label9.TabIndex = 34;
             this.label9.Text = "hh:mm";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
             // 

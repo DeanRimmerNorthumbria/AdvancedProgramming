@@ -19,11 +19,6 @@ namespace day_away_planner.Views
             InitializeComponent();
         }
 
-        private void Clientbookingdetails_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void clientNewbooking_Click(object sender, EventArgs e)
         {
             NewBooking d = new NewBooking(window);
