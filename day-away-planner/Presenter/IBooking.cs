@@ -22,6 +22,7 @@ namespace day_away_planner.Presenter
         List<dynamic> BookingList();
         List<dynamic> BookingFilter(List<bool> filters);
         bool BookingCreate(Models.Client client, Models.Activity activity, Models.Venue venue, string date, string time, string cost, string extras);
+        void BookingToPay(int bookingID);
     }
 }
 

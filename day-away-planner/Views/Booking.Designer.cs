@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.back = new System.Windows.Forms.Button();
             this.bookingGridView = new System.Windows.Forms.DataGridView();
             this.eventUnpaid = new System.Windows.Forms.CheckBox();
@@ -37,16 +38,17 @@
             this.bookingCancelled = new System.Windows.Forms.CheckBox();
             this.bookingCompleted = new System.Windows.Forms.CheckBox();
             this.createNewBooking = new System.Windows.Forms.Button();
+            this.bookingBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Debt_check_label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.bookingGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookingBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // back
             // 
-            this.back.Location = new System.Drawing.Point(16, 654);
-            this.back.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.back.Location = new System.Drawing.Point(12, 531);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(100, 28);
+            this.back.Size = new System.Drawing.Size(75, 23);
             this.back.TabIndex = 5;
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = true;
@@ -59,12 +61,11 @@
             this.bookingGridView.AllowUserToAddRows = false;
             this.bookingGridView.AllowUserToDeleteRows = false;
             this.bookingGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bookingGridView.Location = new System.Drawing.Point(16, 128);
-            this.bookingGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bookingGridView.Location = new System.Drawing.Point(12, 104);
             this.bookingGridView.Name = "bookingGridView";
             this.bookingGridView.ReadOnly = true;
             this.bookingGridView.RowHeadersWidth = 51;
-            this.bookingGridView.Size = new System.Drawing.Size(1577, 506);
+            this.bookingGridView.Size = new System.Drawing.Size(1183, 334);
             this.bookingGridView.TabIndex = 4;
             this.bookingGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bookingGridView_CellContentClick);
             // 
@@ -73,10 +74,9 @@
             this.eventUnpaid.AutoSize = true;
             this.eventUnpaid.Checked = true;
             this.eventUnpaid.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.eventUnpaid.Location = new System.Drawing.Point(1313, 12);
-            this.eventUnpaid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.eventUnpaid.Location = new System.Drawing.Point(985, 10);
             this.eventUnpaid.Name = "eventUnpaid";
-            this.eventUnpaid.Size = new System.Drawing.Size(115, 21);
+            this.eventUnpaid.Size = new System.Drawing.Size(91, 17);
             this.eventUnpaid.TabIndex = 6;
             this.eventUnpaid.Text = "Event Unpaid";
             this.eventUnpaid.UseVisualStyleBackColor = true;
@@ -87,10 +87,9 @@
             this.bookingProposed.AutoSize = true;
             this.bookingProposed.Checked = true;
             this.bookingProposed.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bookingProposed.Location = new System.Drawing.Point(1443, 12);
-            this.bookingProposed.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bookingProposed.Location = new System.Drawing.Point(1082, 10);
             this.bookingProposed.Name = "bookingProposed";
-            this.bookingProposed.Size = new System.Drawing.Size(146, 21);
+            this.bookingProposed.Size = new System.Drawing.Size(113, 17);
             this.bookingProposed.TabIndex = 7;
             this.bookingProposed.Text = "Booking Proposed";
             this.bookingProposed.UseVisualStyleBackColor = true;
@@ -101,10 +100,9 @@
             this.eventPaid.AutoSize = true;
             this.eventPaid.Checked = true;
             this.eventPaid.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.eventPaid.Location = new System.Drawing.Point(1313, 41);
-            this.eventPaid.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.eventPaid.Location = new System.Drawing.Point(985, 33);
             this.eventPaid.Name = "eventPaid";
-            this.eventPaid.Size = new System.Drawing.Size(98, 21);
+            this.eventPaid.Size = new System.Drawing.Size(78, 17);
             this.eventPaid.TabIndex = 8;
             this.eventPaid.Text = "Event Paid";
             this.eventPaid.UseVisualStyleBackColor = true;
@@ -115,10 +113,9 @@
             this.bookingConfirmed.AutoSize = true;
             this.bookingConfirmed.Checked = true;
             this.bookingConfirmed.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bookingConfirmed.Location = new System.Drawing.Point(1443, 41);
-            this.bookingConfirmed.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bookingConfirmed.Location = new System.Drawing.Point(1082, 33);
             this.bookingConfirmed.Name = "bookingConfirmed";
-            this.bookingConfirmed.Size = new System.Drawing.Size(149, 21);
+            this.bookingConfirmed.Size = new System.Drawing.Size(115, 17);
             this.bookingConfirmed.TabIndex = 9;
             this.bookingConfirmed.Text = "Booking Confirmed";
             this.bookingConfirmed.UseVisualStyleBackColor = true;
@@ -129,10 +126,9 @@
             this.bookingCancelled.AutoSize = true;
             this.bookingCancelled.Checked = true;
             this.bookingCancelled.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bookingCancelled.Location = new System.Drawing.Point(1443, 69);
-            this.bookingCancelled.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bookingCancelled.Location = new System.Drawing.Point(1082, 56);
             this.bookingCancelled.Name = "bookingCancelled";
-            this.bookingCancelled.Size = new System.Drawing.Size(147, 21);
+            this.bookingCancelled.Size = new System.Drawing.Size(115, 17);
             this.bookingCancelled.TabIndex = 10;
             this.bookingCancelled.Text = "Booking Cancelled";
             this.bookingCancelled.UseVisualStyleBackColor = true;
@@ -143,10 +139,9 @@
             this.bookingCompleted.AutoSize = true;
             this.bookingCompleted.Checked = true;
             this.bookingCompleted.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.bookingCompleted.Location = new System.Drawing.Point(1443, 97);
-            this.bookingCompleted.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bookingCompleted.Location = new System.Drawing.Point(1082, 79);
             this.bookingCompleted.Name = "bookingCompleted";
-            this.bookingCompleted.Size = new System.Drawing.Size(152, 21);
+            this.bookingCompleted.Size = new System.Drawing.Size(118, 17);
             this.bookingCompleted.TabIndex = 11;
             this.bookingCompleted.Text = "Booking Completed";
             this.bookingCompleted.UseVisualStyleBackColor = true;
@@ -154,10 +149,9 @@
             // 
             // createNewBooking
             // 
-            this.createNewBooking.Location = new System.Drawing.Point(1421, 654);
-            this.createNewBooking.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.createNewBooking.Location = new System.Drawing.Point(1066, 531);
             this.createNewBooking.Name = "createNewBooking";
-            this.createNewBooking.Size = new System.Drawing.Size(172, 28);
+            this.createNewBooking.Size = new System.Drawing.Size(129, 23);
             this.createNewBooking.TabIndex = 12;
             this.createNewBooking.Text = "New Booking";
             this.createNewBooking.UseVisualStyleBackColor = false;
@@ -167,17 +161,18 @@
             // 
             this.Debt_check_label.AutoSize = true;
             this.Debt_check_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Debt_check_label.Location = new System.Drawing.Point(544, 657);
+            this.Debt_check_label.Location = new System.Drawing.Point(408, 534);
+            this.Debt_check_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Debt_check_label.Name = "Debt_check_label";
-            this.Debt_check_label.Size = new System.Drawing.Size(478, 25);
+            this.Debt_check_label.Size = new System.Drawing.Size(397, 20);
             this.Debt_check_label.TabIndex = 13;
             this.Debt_check_label.Text = "Click any booking to check their Respective debt";
             // 
             // Booking
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1609, 777);
+            this.ClientSize = new System.Drawing.Size(1207, 631);
             this.Controls.Add(this.Debt_check_label);
             this.Controls.Add(this.createNewBooking);
             this.Controls.Add(this.bookingCompleted);
@@ -188,11 +183,11 @@
             this.Controls.Add(this.eventUnpaid);
             this.Controls.Add(this.back);
             this.Controls.Add(this.bookingGridView);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Booking";
             this.Text = "Booking";
             this.Load += new System.EventHandler(this.Booking_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bookingGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bookingBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,5 +205,6 @@
         private System.Windows.Forms.CheckBox bookingCompleted;
         private System.Windows.Forms.Button createNewBooking;
         private System.Windows.Forms.Label Debt_check_label;
+        private System.Windows.Forms.BindingSource bookingBindingSource;
     }
 }
