@@ -35,19 +35,19 @@ namespace day_away_planner.Migrations
             context.Clients.AddOrUpdate(x => x.ClientID,
                 new Client() {ClientID = 1, ClientName = "Bob Test", ClientDepartment = "Sales", ClientCompany = "Bloom Marketing", ClientDebt = 0, ClientArrears = false},
                 new Client() {ClientID = 2, ClientName = "Kayley Vail", ClientDepartment = "Marketing", ClientCompany = "Bloom Marketing", ClientDebt = 0, ClientArrears = false},
-                new Client() { ClientID = 3, ClientName = "Frank Carrington", ClientDepartment = "Accounting", ClientCompany = "Hearty Pancake", ClientDebt = 233.45, ClientArrears = false },
+                new Client() { ClientID = 3, ClientName = "Frank Carrington", ClientDepartment = "Accounting", ClientCompany = "Hearty Pancake", ClientDebt = 0, ClientArrears = false },
                 new Client() { ClientID = 4, ClientName = "Clayton Wynn", ClientDepartment = "Sales", ClientCompany = "The Auto DNA", ClientDebt = 0, ClientArrears = false },
-                new Client() { ClientID = 5, ClientName = "Temple Raleigh", ClientDepartment = "Accounting", ClientCompany = "Urban Philosophy", ClientDebt = 233.45, ClientArrears = false },
+                new Client() { ClientID = 5, ClientName = "Temple Raleigh", ClientDepartment = "Accounting", ClientCompany = "Urban Philosophy", ClientDebt = 0, ClientArrears = false },
                 new Client() { ClientID = 6, ClientName = "Skyler Cam", ClientDepartment = "Marketing", ClientCompany = "Gourmet Sandwich", ClientDebt = 0, ClientArrears = false },
                 new Client() { ClientID = 7, ClientName = "Tegan Spencer", ClientDepartment = "Accounting", ClientCompany = "Office Tile", ClientDebt = 0, ClientArrears = false },
                 new Client() { ClientID = 8, ClientName = "Ansley Christan", ClientDepartment = "Marketing", ClientCompany = "The Crunchy Croissant", ClientDebt = 0, ClientArrears = false },
                 new Client() { ClientID = 9, ClientName = "Brice Ken", ClientDepartment = "Sales", ClientCompany = "Smart Phone Repair", ClientDebt = 0, ClientArrears = false },
                 new Client() { ClientID = 10, ClientName = "Kimberley Raleigh", ClientDepartment = "Sales", ClientCompany = "Ready Continental", ClientDebt = 0, ClientArrears = false },
-                new Client() { ClientID = 11, ClientName = "Piper Kit", ClientDepartment = "Accounting", ClientCompany = "Service Scientist", ClientDebt = 233.45, ClientArrears = false },
+                new Client() { ClientID = 11, ClientName = "Piper Kit", ClientDepartment = "Accounting", ClientCompany = "Service Scientist", ClientDebt = 0, ClientArrears = false },
                 new Client() { ClientID = 12, ClientName = "Avery Page", ClientDepartment = "Marketing", ClientCompany = "House Brush", ClientDebt = 0, ClientArrears = false },
                 new Client() { ClientID = 13, ClientName = "Linsey Ainslee", ClientDepartment = "Accounting", ClientCompany = "Office Brush", ClientDebt = 0, ClientArrears = false },
                 new Client() { ClientID = 14, ClientName = "Halley Kim", ClientDepartment = "Sales", ClientCompany = "Brew Bean", ClientDebt = 0, ClientArrears = false },
-                new Client() { ClientID = 15, ClientName = "Jeanelle Caine", ClientDepartment = "Marketing", ClientCompany = "Trendy Scissor", ClientDebt = 233.45, ClientArrears = false }
+                new Client() { ClientID = 15, ClientName = "Jeanelle Caine", ClientDepartment = "Marketing", ClientCompany = "Trendy Scissor", ClientDebt = 0, ClientArrears = false }
             );
 
             context.Activities.AddOrUpdate(x => x.ActivityID,

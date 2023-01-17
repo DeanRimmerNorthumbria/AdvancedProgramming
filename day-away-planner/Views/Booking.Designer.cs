@@ -46,9 +46,9 @@
             // 
             // back
             // 
-            this.back.Location = new System.Drawing.Point(12, 531);
+            this.back.Location = new System.Drawing.Point(12, 518);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(75, 23);
+            this.back.Size = new System.Drawing.Size(87, 36);
             this.back.TabIndex = 5;
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = true;
@@ -149,9 +149,9 @@
             // 
             // createNewBooking
             // 
-            this.createNewBooking.Location = new System.Drawing.Point(1066, 531);
+            this.createNewBooking.Location = new System.Drawing.Point(1052, 527);
             this.createNewBooking.Name = "createNewBooking";
-            this.createNewBooking.Size = new System.Drawing.Size(129, 23);
+            this.createNewBooking.Size = new System.Drawing.Size(143, 36);
             this.createNewBooking.TabIndex = 12;
             this.createNewBooking.Text = "New Booking";
             this.createNewBooking.UseVisualStyleBackColor = false;

@@ -45,8 +45,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.modifyClient = new System.Windows.Forms.Button();
-            this.newClient = new System.Windows.Forms.Button();
             this.selectActivity = new System.Windows.Forms.Button();
             this.what = new System.Windows.Forms.Button();
             this.selectVenue = new System.Windows.Forms.Button();
@@ -73,7 +71,7 @@
             // who
             // 
             this.who.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.who.Location = new System.Drawing.Point(554, 135);
+            this.who.Location = new System.Drawing.Point(345, 135);
             this.who.Name = "who";
             this.who.Size = new System.Drawing.Size(102, 23);
             this.who.TabIndex = 1;
@@ -121,6 +119,7 @@
             // 
             // textBox6
             // 
+            this.textBox6.Enabled = false;
             this.textBox6.Location = new System.Drawing.Point(257, 237);
             this.textBox6.Margin = new System.Windows.Forms.Padding(2);
             this.textBox6.Name = "textBox6";
@@ -166,7 +165,6 @@
             this.label7.Size = new System.Drawing.Size(60, 20);
             this.label7.TabIndex = 22;
             this.label7.Text = "Extras";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label6
             // 
@@ -245,29 +243,6 @@
             this.label8.Size = new System.Drawing.Size(57, 20);
             this.label8.TabIndex = 31;
             this.label8.Text = "Client";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
-            // 
-            // modifyClient
-            // 
-            this.modifyClient.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modifyClient.Location = new System.Drawing.Point(345, 135);
-            this.modifyClient.Name = "modifyClient";
-            this.modifyClient.Size = new System.Drawing.Size(122, 23);
-            this.modifyClient.TabIndex = 2;
-            this.modifyClient.Text = "Modify Existing Client";
-            this.modifyClient.UseVisualStyleBackColor = true;
-            this.modifyClient.Click += new System.EventHandler(this.modifyClient_Click);
-            // 
-            // newClient
-            // 
-            this.newClient.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newClient.Location = new System.Drawing.Point(473, 135);
-            this.newClient.Name = "newClient";
-            this.newClient.Size = new System.Drawing.Size(75, 23);
-            this.newClient.TabIndex = 3;
-            this.newClient.Text = "New Client";
-            this.newClient.UseVisualStyleBackColor = true;
-            this.newClient.Click += new System.EventHandler(this.newClient_Click);
             // 
             // selectActivity
             // 
@@ -323,7 +298,6 @@
             this.label9.Size = new System.Drawing.Size(48, 15);
             this.label9.TabIndex = 34;
             this.label9.Text = "hh:mm";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label10
             // 
@@ -400,8 +374,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.newClient);
-            this.Controls.Add(this.modifyClient);
             this.Controls.Add(this.what);
             this.Controls.Add(this.selectActivity);
             this.Controls.Add(this.who);
@@ -433,8 +405,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button modifyClient;
-        private System.Windows.Forms.Button newClient;
         private System.Windows.Forms.Button selectActivity;
         private System.Windows.Forms.Button what;
         private System.Windows.Forms.Button selectVenue;

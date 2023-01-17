@@ -90,3 +90,4 @@ C:\Users\Dean\Source\Repos\AdvancedProgramming\day-away-planner\obj\Debug\day_aw
 C:\Users\Dean\source\repos\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Views.Clientbookingdetails.resources
 C:\Users\Dean\source\repos\AdvancedProgramming\day-away-planner\bin\Debug\System.Data.SqlClient.dll
 C:\Users\Dean\source\repos\AdvancedProgramming\day-away-planner\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Dean\source\repos\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Views.ClientDebtCheck.resources
