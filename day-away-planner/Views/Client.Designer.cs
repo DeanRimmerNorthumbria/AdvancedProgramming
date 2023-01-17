@@ -38,9 +38,9 @@
             // 
             // back
             // 
-            this.back.Location = new System.Drawing.Point(12, 444);
+            this.back.Location = new System.Drawing.Point(12, 433);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(75, 23);
+            this.back.Size = new System.Drawing.Size(92, 34);
             this.back.TabIndex = 3;
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = true;
@@ -58,7 +58,7 @@
             this.clientGridView.ReadOnly = true;
             this.clientGridView.RowHeadersWidth = 51;
             this.clientGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.clientGridView.Size = new System.Drawing.Size(703, 334);
+            this.clientGridView.Size = new System.Drawing.Size(676, 334);
             this.clientGridView.TabIndex = 2;
             this.clientGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.clientGridView_RowCellDoubleClick);
             // 
@@ -67,7 +67,7 @@
             this.companyName.Location = new System.Drawing.Point(98, 22);
             this.companyName.Margin = new System.Windows.Forms.Padding(2);
             this.companyName.Name = "companyName";
-            this.companyName.Size = new System.Drawing.Size(122, 20);
+            this.companyName.Size = new System.Drawing.Size(179, 20);
             this.companyName.TabIndex = 4;
             this.companyName.TextChanged += new System.EventHandler(this.companyName_TextChanged);
             // 
@@ -83,10 +83,11 @@
             // 
             // createNewClient
             // 
-            this.createNewClient.Location = new System.Drawing.Point(497, 444);
+            this.createNewClient.Enabled = false;
+            this.createNewClient.Location = new System.Drawing.Point(576, 433);
             this.createNewClient.Margin = new System.Windows.Forms.Padding(2);
             this.createNewClient.Name = "createNewClient";
-            this.createNewClient.Size = new System.Drawing.Size(97, 19);
+            this.createNewClient.Size = new System.Drawing.Size(112, 34);
             this.createNewClient.TabIndex = 13;
             this.createNewClient.Text = "New Client";
             this.createNewClient.UseVisualStyleBackColor = false;
@@ -96,7 +97,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(727, 533);
+            this.ClientSize = new System.Drawing.Size(702, 493);
             this.Controls.Add(this.createNewClient);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.companyName);

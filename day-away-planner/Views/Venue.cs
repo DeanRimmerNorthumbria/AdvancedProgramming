@@ -40,9 +40,6 @@ namespace day_away_planner.Views
                 bookingWindow.BookingVenue = venues[e.RowIndex];
                 this.Close();
             }
-
-            venueGridView.DataSource = venue.VenueList();
-
         }
 
         private void back_Click(object sender, EventArgs e)
