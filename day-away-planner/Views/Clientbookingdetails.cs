@@ -25,5 +25,10 @@ namespace day_away_planner.Views
             d.Show();
             
         }
+
+        private void Clientbookingdetails_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = window.BookingClientFilter(Client_Name.Text, Company_Name.Text);
+        }
     }
 }

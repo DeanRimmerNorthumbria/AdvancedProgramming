@@ -108,6 +108,40 @@ namespace day_away_planner.Presenter
             }
         }
 
+        public List<dynamic> BookingClientFilter(string clientName, string clientCompany)
+        {
+            using (var context = new MyDBEntities())
+            {
+                var query =
+                    from booking in context.Bookings
+                    join ven in context.Venues on booking.BookingVenueID equals ven.VenueID
+                    join act in context.Activities on booking.BookingActivityID equals act.ActivityID
+                    join cli in context.Clients on booking.BookingClientID equals cli.ClientID
+                    select new
+                    {
+                        bookingID = booking.BookingID,
+                        venueName = ven.VenueName,
+                        venueLoation = ven.VenueLocation,
+                        act.ActivityName,
+                        cli.ClientName,
+                        cli.ClientCompany,
+                        booking.BookingEventDate,
+                        booking.BookingConfirmation,
+                        booking.BookingCancellation,
+                        booking.BookingCancellationDate
+                    };
+                List<dynamic> data = new List<dynamic>();
+                foreach (var item in query)
+                {
+                    if (item.ClientCompany == clientCompany && item.ClientName == clientName)
+                    {
+                        data.Add(item);
+                    }
+                }
+                return data;
+            }
+        }
+
         public List<dynamic> BookingFilter(List<bool> filters)
         {
             using (var context = new MyDBEntities())

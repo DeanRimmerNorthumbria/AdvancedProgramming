@@ -21,6 +21,8 @@ namespace day_away_planner.Views
 
         List<dynamic> BookingList();
 
+        List<dynamic> BookingClientFilter(string clientName, string clientCompany);
+
         List<dynamic> BookingFilter(List<bool> filters);
     }
 }

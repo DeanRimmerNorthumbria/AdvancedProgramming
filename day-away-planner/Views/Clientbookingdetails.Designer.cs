@@ -32,12 +32,13 @@ namespace day_away_planner.Views
             this.Clnt_Name = new System.Windows.Forms.Label();
             this.Cmp_Name = new System.Windows.Forms.Label();
             this.Department = new System.Windows.Forms.Label();
-            this.Company_Bookings = new System.Windows.Forms.TextBox();
             this.Clnt_booking_details = new System.Windows.Forms.Label();
             this.clientNewbooking = new System.Windows.Forms.Button();
             this.Client_Department = new System.Windows.Forms.TextBox();
             this.Company_Name = new System.Windows.Forms.TextBox();
             this.Client_Name = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // Clnt_Name
@@ -73,20 +74,11 @@ namespace day_away_planner.Views
             this.Department.TabIndex = 3;
             this.Department.Text = "Department";
             // 
-            // Company_Bookings
-            // 
-            this.Company_Bookings.Location = new System.Drawing.Point(474, 54);
-            this.Company_Bookings.Margin = new System.Windows.Forms.Padding(2);
-            this.Company_Bookings.Multiline = true;
-            this.Company_Bookings.Name = "Company_Bookings";
-            this.Company_Bookings.Size = new System.Drawing.Size(371, 292);
-            this.Company_Bookings.TabIndex = 8;
-            // 
             // Clnt_booking_details
             // 
             this.Clnt_booking_details.AutoSize = true;
             this.Clnt_booking_details.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Clnt_booking_details.Location = new System.Drawing.Point(471, 18);
+            this.Clnt_booking_details.Location = new System.Drawing.Point(400, 18);
             this.Clnt_booking_details.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Clnt_booking_details.Name = "Clnt_booking_details";
             this.Clnt_booking_details.Size = new System.Drawing.Size(167, 17);
@@ -133,14 +125,22 @@ namespace day_away_planner.Views
             this.Client_Name.Size = new System.Drawing.Size(209, 23);
             this.Client_Name.TabIndex = 1;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(403, 54);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(442, 303);
+            this.dataGridView1.TabIndex = 15;
+            // 
             // Clientbookingdetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(867, 427);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.clientNewbooking);
             this.Controls.Add(this.Clnt_booking_details);
-            this.Controls.Add(this.Company_Bookings);
             this.Controls.Add(this.Company_Name);
             this.Controls.Add(this.Client_Department);
             this.Controls.Add(this.Department);
@@ -150,6 +150,8 @@ namespace day_away_planner.Views
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Clientbookingdetails";
             this.Text = "Clientbookingdetails";
+            this.Load += new System.EventHandler(this.Clientbookingdetails_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,9 +164,9 @@ namespace day_away_planner.Views
         private System.Windows.Forms.Label Department;
         private System.Windows.Forms.Label Clnt_booking_details;
         private System.Windows.Forms.Button clientNewbooking;
-        public System.Windows.Forms.TextBox Company_Bookings;
         public System.Windows.Forms.TextBox Client_Department;
         public System.Windows.Forms.TextBox Company_Name;
         public System.Windows.Forms.TextBox Client_Name;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

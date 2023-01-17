@@ -30,6 +30,11 @@ namespace day_away_planner.Views
             return booking.BookingFilter(filters);
         }
 
+        public List<dynamic> BookingClientFilter(string clientName, string clientCompany)
+        {
+            return booking.BookingClientFilter(clientName, clientCompany);
+        }
+
         public void PayBooking(int bookingID)
         {
             Presenter.Booking bp = new Presenter.Booking();
