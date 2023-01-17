@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.32929.386
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "day-away-planner", "day-away-planner\day-away-planner.csproj", "{D89FB956-C669-486B-849F-0474BF158D7A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dat-away-planner UnitTesting", "dat-away-planner UnitTesting\dat-away-planner UnitTesting.csproj", "{18BC842C-6818-4D83-96A2-21B1643089B3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "day-away-planner_UnitTesting", "dat-away-planner UnitTesting\day-away-planner_UnitTesting.csproj", "{18BC842C-6818-4D83-96A2-21B1643089B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
