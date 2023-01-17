@@ -41,20 +41,22 @@ namespace day_away_planner.Views
             this.activityGridView.AllowUserToAddRows = false;
             this.activityGridView.AllowUserToDeleteRows = false;
             this.activityGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.activityGridView.Location = new System.Drawing.Point(12, 12);
+            this.activityGridView.Location = new System.Drawing.Point(11, 20);
+            this.activityGridView.Margin = new System.Windows.Forms.Padding(2);
             this.activityGridView.Name = "activityGridView";
             this.activityGridView.ReadOnly = true;
             this.activityGridView.RowHeadersWidth = 51;
             this.activityGridView.RowTemplate.Height = 24;
-            this.activityGridView.Size = new System.Drawing.Size(874, 478);
+            this.activityGridView.Size = new System.Drawing.Size(465, 346);
             this.activityGridView.TabIndex = 2;
-            this.activityGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.activityGridView_CellContentClick);
+            this.activityGridView.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.activityGridView_RowCellDoubleClick);
             // 
             // back
             // 
-            this.back.Location = new System.Drawing.Point(25, 496);
+            this.back.Location = new System.Drawing.Point(11, 370);
+            this.back.Margin = new System.Windows.Forms.Padding(2);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(75, 23);
+            this.back.Size = new System.Drawing.Size(89, 38);
             this.back.TabIndex = 1;
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = true;
@@ -62,11 +64,12 @@ namespace day_away_planner.Views
             // 
             // Activity
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1046, 561);
+            this.ClientSize = new System.Drawing.Size(487, 432);
             this.Controls.Add(this.back);
             this.Controls.Add(this.activityGridView);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Activity";
             this.Text = "Activity";
             this.Load += new System.EventHandler(this.Activity_Load);

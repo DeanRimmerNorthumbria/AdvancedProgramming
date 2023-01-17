@@ -83,3 +83,11 @@ C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\d
 C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\day-away-planner.csproj.CopyComplete
 C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\day-away-planner.exe
 C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\day-away-planner.pdb
+C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Views.NewBooking.resources
+C:\Users\Dean\source\New folder\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Views.NewClient.resources
+C:\Users\Dean\Source\Repos\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Views.NewBooking.resources
+C:\Users\Dean\Source\Repos\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Views.NewClient.resources
+C:\Users\Dean\source\repos\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Views.Clientbookingdetails.resources
+C:\Users\Dean\source\repos\AdvancedProgramming\day-away-planner\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Dean\source\repos\AdvancedProgramming\day-away-planner\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Dean\source\repos\AdvancedProgramming\day-away-planner\obj\Debug\day_away_planner.Views.ClientDebtCheck.resources

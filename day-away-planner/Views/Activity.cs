@@ -12,9 +12,21 @@ namespace day_away_planner.Views
 {
     public partial class Activity : Form
     {
+
+        private BookingWindow bookingWindow;
+        private List<Models.Activity> activities;
+        Presenter.Activity activity = new Presenter.Activity();
+
         public Activity()
         {
             InitializeComponent();
+        }
+
+        internal Activity(BookingWindow window)
+        {
+            this.bookingWindow = window;
+            InitializeComponent();
+            back.Enabled = false;
         }
 
         private void back_Click(object sender, EventArgs e)
@@ -24,16 +36,22 @@ namespace day_away_planner.Views
             this.Close();
         }
 
-        private void activityGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void activityGridView_RowCellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (bookingWindow != null)
+            {
+                bookingWindow.BookingActivity = activities[e.RowIndex];
+                this.Close();
+            }
+
+            activityGridView.DataSource = activity.getActivityList();
 
         }
 
         private void Activity_Load(object sender, EventArgs e)
         {
-            Presenter.Activity activity = new Presenter.Activity();
-
-            activityGridView.DataSource = activity.getActivityList();
+            activities = activity.getActivityList();
+            activityGridView.DataSource = activities;
         }
     }
 }

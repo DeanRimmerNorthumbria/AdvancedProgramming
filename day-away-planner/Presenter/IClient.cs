@@ -17,6 +17,7 @@ namespace day_away_planner.Presenter
         int VenueCapacity { get; set; }
 
         List<Models.Client> ClientList();
+        List<Models.Client> FindClients(string searchString);
     }
 }
 

@@ -13,6 +13,8 @@ namespace day_away_planner.Views
 {
     public partial class Booking : Form
     {
+        BookingWindow window = new BookingWindow();
+        
         public Booking()
         {
             InitializeComponent();
@@ -27,11 +29,91 @@ namespace day_away_planner.Views
 
         private void Booking_Load(object sender, EventArgs e)
         {
-            Presenter.Booking booking = new Presenter.Booking();
-
-            bookingGridView.DataSource = booking.getBookingList();
+            DataGridViewButtonColumn bookingButton = new DataGridViewButtonColumn();
+            bookingButton.Name = "PayBooking";
+            bookingButton.HeaderText = "Pay Booking";
+            bookingButton.Text = "Pay Booking";
+            bookingButton.UseColumnTextForButtonValue = true;
+            bookingGridView.Columns.Insert(0, bookingButton);
+            bookingGridView.DataSource = window.BookingList();    
         }
 
+        private void bookingGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+            if (bookingGridView.Columns[e.ColumnIndex].Name == "PayBooking")
+            {
+                DialogResult dr = MessageBox.Show("Has this booking been paid and confirmed?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dr == DialogResult.Yes)
+                {
+                    int bookingID = (Int32)bookingGridView.Rows[e.RowIndex].Cells[1].Value;
+                    window.PayBooking(bookingID);  
+                }
+            }
+            else
+            {
+                ClientDebtCheck debt = new ClientDebtCheck(this.bookingGridView.Rows[e.RowIndex].Cells[1].Value.ToString());
+                debt.Client_Booked_Date.Text = this.bookingGridView.CurrentRow.Cells[9].Value.ToString();
+                debt.Client_Debt.Text = this.bookingGridView.CurrentRow.Cells[8].Value.ToString();
+                debt.Client_Name.Text = this.bookingGridView.CurrentRow.Cells[6].Value.ToString();
+                debt.Client_Company.Text = this.bookingGridView.CurrentRow.Cells[7].Value.ToString();
+                debt.ShowDialog();
+            }
+        }
 
+        private void eventUnpaid_CheckedChanged(object sender, EventArgs e)
+        {
+            applyFilters();
+        }
+
+        private void eventPaid_CheckedChanged(object sender, EventArgs e)
+        {
+            applyFilters();   
+        }
+
+        private List<bool> checkFilters()
+        {
+            List<bool> filterValues = new List<bool>();
+            filterValues.Add(eventPaid.Checked);
+            filterValues.Add(eventUnpaid.Checked);
+            filterValues.Add(bookingProposed.Checked);
+            filterValues.Add(bookingConfirmed.Checked);
+            filterValues.Add(bookingCancelled.Checked);  
+            filterValues.Add(bookingCompleted.Checked);
+
+            return filterValues;
+        }
+
+        private void applyFilters()
+        {
+            bookingGridView.DataSource = window.BookingFilter(checkFilters());
+            bookingGridView.Refresh();
+        }
+
+        private void bookingProposed_CheckedChanged(object sender, EventArgs e)
+        {
+            applyFilters();
+        }
+
+        private void bookingConfirmed_CheckedChanged(object sender, EventArgs e)
+        {
+            applyFilters();
+        }
+
+        private void bookingCancelled_CheckedChanged(object sender, EventArgs e)
+        {
+            applyFilters();
+        }
+
+        private void bookingCompleted_CheckedChanged(object sender, EventArgs e)
+        {
+            applyFilters();
+        }
+
+        private void createNewBooking_Click(object sender, EventArgs e)
+        {
+            NewBooking newBooking = new NewBooking(window);
+            newBooking.Show();
+        }
     }
 }
