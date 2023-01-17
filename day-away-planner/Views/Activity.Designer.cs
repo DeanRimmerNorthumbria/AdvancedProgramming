@@ -53,10 +53,10 @@ namespace day_away_planner.Views
             // 
             // back
             // 
-            this.back.Location = new System.Drawing.Point(11, 385);
+            this.back.Location = new System.Drawing.Point(11, 370);
             this.back.Margin = new System.Windows.Forms.Padding(2);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(73, 23);
+            this.back.Size = new System.Drawing.Size(89, 38);
             this.back.TabIndex = 1;
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = true;

@@ -38,9 +38,9 @@
             // 
             // back
             // 
-            this.back.Location = new System.Drawing.Point(12, 444);
+            this.back.Location = new System.Drawing.Point(12, 433);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(75, 23);
+            this.back.Size = new System.Drawing.Size(92, 34);
             this.back.TabIndex = 3;
             this.back.Text = "Back";
             this.back.UseVisualStyleBackColor = true;
@@ -84,10 +84,10 @@
             // createNewClient
             // 
             this.createNewClient.Enabled = false;
-            this.createNewClient.Location = new System.Drawing.Point(591, 444);
+            this.createNewClient.Location = new System.Drawing.Point(576, 433);
             this.createNewClient.Margin = new System.Windows.Forms.Padding(2);
             this.createNewClient.Name = "createNewClient";
-            this.createNewClient.Size = new System.Drawing.Size(97, 23);
+            this.createNewClient.Size = new System.Drawing.Size(112, 34);
             this.createNewClient.TabIndex = 13;
             this.createNewClient.Text = "New Client";
             this.createNewClient.UseVisualStyleBackColor = false;
