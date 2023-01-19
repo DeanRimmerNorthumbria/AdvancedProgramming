@@ -9,7 +9,7 @@ namespace day_away_planner.Models
 {
     public partial class MyDBEntities : DbContext
     {
-        public MyDBEntities() : base("name=conString")
+        public MyDBEntities() : base("conString")
         {
             //Database.SetInitializer(new MigrateDatabaseToLatestVersion<MyDBEntities>);
         }

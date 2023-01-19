@@ -1,38 +1,39 @@
 ﻿using day_away_planner.Models;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace day_away_planner.Presenter
 {
-    internal class Client : IClient
+    public class Client : IClient
     {
         public Client()
         {
 
         }
 
-        public int VenueID { get; set; }
-        public string VenueName { get; set; }
-        public double VenueCost { get; set; }
-        public string VenueExtras { get; set; }
-        public string VenueLocation { get; set; }
-        public int VenueCapacity { get; set; }
+        public int ClientID { get; set; }
+        public string ClientName { get; set; }
+        public string ClientCompany { get; set; }
+        public string ClientDepartment { get; set; }
+        public double ClientDebt { get; set; }
+        public bool ClientArrears { get; set; }
 
-        public List<Models.Client> ClientList()
+        public List<Models.Client> ClientList(MyDBEntities DbEntities)
         {
-            using (var context = new MyDBEntities())
+            using (var context = DbEntities)
             {
                 var clientList = context.Clients.ToList<Models.Client>();
                 return clientList;
             }
         }
 
-        public List<Models.Client> FindClients(string searchString)
+        public List<Models.Client> FindClients(MyDBEntities DbEntities, string searchString)
         {
-            using (var context = new MyDBEntities())
+            using (var context = DbEntities)
             {
                 var clientList = context.Clients.ToList<Models.Client>();
                 var foundClients = new List<Models.Client>();
