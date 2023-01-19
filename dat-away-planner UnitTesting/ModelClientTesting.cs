@@ -4,7 +4,7 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 
-namespace dat_away_planner_UnitTesting
+namespace day_away_planner_UnitTesting
 {
     [TestClass]
     public class ModelClientTesting
