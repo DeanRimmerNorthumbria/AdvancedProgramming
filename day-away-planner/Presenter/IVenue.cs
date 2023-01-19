@@ -1,4 +1,5 @@
-﻿using System;
+﻿using day_away_planner.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,6 @@ namespace day_away_planner.Presenter
         string VenueLocation { get; set; }
         int VenueCapacity { get; set; }
 
-        List<Models.Venue> VenueList();
+        List<Models.Venue> VenueList(MyDBEntities DbEntities);
     }
 }

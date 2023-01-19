@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
-namespace dat_away_planner_UnitTesting
+namespace day_away_planner_UnitTesting
 {
     [TestClass]
     public class PresenterActivityTest

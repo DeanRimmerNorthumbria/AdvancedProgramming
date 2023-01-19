@@ -1,4 +1,5 @@
-﻿using System;
+﻿using day_away_planner.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -29,7 +30,8 @@ namespace day_away_planner.Views
 
         private void Venue_Load(object sender, EventArgs e)
         {
-            venues = venue.VenueList();
+            MyDBEntities DbEntities = new MyDBEntities();
+            venues = venue.VenueList(DbEntities);
             venueGridView.DataSource = venues;
         }
 
