@@ -1,4 +1,5 @@
-﻿using System;
+﻿using day_away_planner.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -9,15 +10,15 @@ namespace day_away_planner.Presenter
 {
     interface IClient
     {
-        int VenueID { get; set; }
-        string VenueName { get; set; }
-        double VenueCost { get; set; }
-        string VenueExtras { get; set; }
-        string VenueLocation { get; set; }
-        int VenueCapacity { get; set; }
+         int ClientID { get; set; }
+         string ClientName { get; set; }
+         string ClientCompany { get; set; }
+         string ClientDepartment { get; set; }
+         double ClientDebt { get; set; }
+         bool ClientArrears { get; set; }
 
-        List<Models.Client> ClientList();
-        List<Models.Client> FindClients(string searchString);
+        List<Models.Client> ClientList(MyDBEntities DbEntities);
+        List<Models.Client> FindClients(MyDBEntities DbEntities, string searchString);
     }
 }
 

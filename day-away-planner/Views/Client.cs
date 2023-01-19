@@ -1,4 +1,5 @@
-﻿using System;
+﻿using day_away_planner.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -39,7 +40,8 @@ namespace day_away_planner.Views
         {
 
             Presenter.Client client = new Presenter.Client();
-            clients = client.ClientList();
+            MyDBEntities DbEntities = new MyDBEntities();
+            clients = client.ClientList(DbEntities);
             clientGridView.DataSource = clients;
         }
 
@@ -65,11 +67,13 @@ namespace day_away_planner.Views
             var search = companyName.Text;
             if (search != "")
             {
-                clientGridView.DataSource = client.FindClients(search);
+                MyDBEntities DbEntities = new MyDBEntities();
+                clientGridView.DataSource = client.FindClients(DbEntities, search);
             }
             else
             {
-                clientGridView.DataSource = client.ClientList();
+                MyDBEntities DbEntities = new MyDBEntities();
+                clientGridView.DataSource = client.ClientList(DbEntities);
             }
         }
 

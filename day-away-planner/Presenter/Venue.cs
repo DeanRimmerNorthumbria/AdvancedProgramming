@@ -22,9 +22,9 @@ namespace day_away_planner.Presenter
         public string VenueLocation { get; set; }
         public int VenueCapacity { get; set; }
 
-        public List<Models.Venue> VenueList()
+        public List<Models.Venue> VenueList(MyDBEntities DbEntities)
         {
-            using (var context = new MyDBEntities())
+            using (var context = DbEntities)
             {
                 var venueList = context.Venues.ToList<Models.Venue>();
                 return venueList;
