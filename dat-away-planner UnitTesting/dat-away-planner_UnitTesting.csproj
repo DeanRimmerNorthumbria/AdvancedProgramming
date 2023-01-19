@@ -73,6 +73,7 @@
     <Compile Include="ModelActivityTesting.cs" />
     <Compile Include="ModelClientTesting.cs" />
     <Compile Include="ModelVenueTesting.cs" />
+    <Compile Include="PresenterActivityTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PresenterClientTesting.cs" />
   </ItemGroup>

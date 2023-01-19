@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace day_away_planner.Presenter
 {
-    internal class Activity
+    public class Activity
     {
 
         public Activity()
@@ -17,9 +17,9 @@ namespace day_away_planner.Presenter
         }
 
 
-        public List<Models.Activity> getActivityList()
+        public List<Models.Activity> getActivityList(MyDBEntities entityContext)
         {
-            using (var context = new MyDBEntities())
+            using (var context = entityContext)
             {
                 var activityList = context.Activities.ToList<Models.Activity>();
                 return activityList;

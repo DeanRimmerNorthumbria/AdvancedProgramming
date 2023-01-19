@@ -1,4 +1,5 @@
-﻿using System;
+﻿using day_away_planner.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -43,14 +44,15 @@ namespace day_away_planner.Views
                 bookingWindow.BookingActivity = activities[e.RowIndex];
                 this.Close();
             }
-
-            activityGridView.DataSource = activity.getActivityList();
+            MyDBEntities entity = new MyDBEntities();
+            activityGridView.DataSource = activity.getActivityList(entity);
 
         }
 
         private void Activity_Load(object sender, EventArgs e)
         {
-            activities = activity.getActivityList();
+            MyDBEntities entity= new MyDBEntities();    
+            activities = activity.getActivityList(entity);
             activityGridView.DataSource = activities;
         }
     }

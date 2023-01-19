@@ -6,7 +6,7 @@ using System.Net.NetworkInformation;
 using System.Collections.Generic;
 using Moq;
 
-namespace dat_away_planner_UnitTesting
+namespace day_away_planner_UnitTesting
 {
     [TestClass]
     public class PresenterClientTesting
