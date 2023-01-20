@@ -1,11 +1,10 @@
-﻿using day_away_planner.Models;
+﻿//Ryan Chandler	w18009424@northumbria.ac.uk 
+//Dean Rimmer	w18029848@northumbria.ac.uk
+//Bhanu Prakash	w21052079@northumbria.ac.uk
+//Precious Chidiadi Nwachukwu	22007369@northumbria.ac.uk
+using day_away_planner.Models;
 using System;
 using System.Collections.Generic;
-//Ryan Chandler	w18009424@northumbria.ac.uk 
-//Dean Rimmer	w18029848@northumbria.ac.uk
-//Bhanu Prakash	w18029848@northumbria.ac.uk
-//Precious Chidiadi Nwachukwu	22007369@northumbria.ac.uk
-
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
