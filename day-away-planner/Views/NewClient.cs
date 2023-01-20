@@ -1,4 +1,9 @@
-﻿using System;
+﻿//Ryan Chandler	w18009424@northumbria.ac.uk 
+//Dean Rimmer	w18029848@northumbria.ac.uk
+//Bhanu Prakash	w18029848@northumbria.ac.uk
+//Precious Chidiadi Nwachukwu	22007369@northumbria.ac.uk
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -44,6 +49,11 @@ namespace day_away_planner.Views
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             button3.Enabled = radioButton2.Checked;
+        }
+
+        private void NewClient_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
