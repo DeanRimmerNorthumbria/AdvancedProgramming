@@ -1,4 +1,8 @@
-﻿using day_away_planner.Models;
+﻿//Ryan Chandler	w18009424@northumbria.ac.uk 
+//Dean Rimmer	w18029848@northumbria.ac.uk
+//Bhanu Prakash	w18029848@northumbria.ac.uk
+//Precious Chidiadi Nwachukwu	22007369@northumbria.ac.uk
+using day_away_planner.Models;
 using day_away_planner.Presenter;
 using day_away_planner.Views;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -78,7 +82,7 @@ namespace day_away_planner_UnitTesting
             Assert.AreEqual(booking.BookingCancellationDate, new DateTime(2000, 4, 17));
         }
         [TestMethod]
-        public void TestGetAllClients()
+        public void TestGetAllBookings()
         {
             var context = new MyDBEntities();
             List<dynamic> bookingList = new List<dynamic>();

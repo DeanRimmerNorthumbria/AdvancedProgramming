@@ -1,4 +1,8 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿//Ryan Chandler	w18009424@northumbria.ac.uk 
+//Dean Rimmer	w18029848@northumbria.ac.uk
+//Bhanu Prakash	w18029848@northumbria.ac.uk
+//Precious Chidiadi Nwachukwu	22007369@northumbria.ac.uk
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using day_away_planner.Presenter;
 using day_away_planner.Models;
