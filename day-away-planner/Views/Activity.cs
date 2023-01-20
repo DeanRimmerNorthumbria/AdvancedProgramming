@@ -23,7 +23,7 @@ namespace day_away_planner.Views
             InitializeComponent();
         }
 
-        internal Activity(BookingWindow window)
+        public Activity(BookingWindow window)
         {
             this.bookingWindow = window;
             InitializeComponent();

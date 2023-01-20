@@ -1,4 +1,5 @@
-﻿using day_away_planner.Presenter;
+﻿using day_away_planner.Models;
+using day_away_planner.Presenter;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,7 +36,8 @@ namespace day_away_planner.Views
             bookingButton.Text = "Pay Booking";
             bookingButton.UseColumnTextForButtonValue = true;
             bookingGridView.Columns.Insert(0, bookingButton);
-            bookingGridView.DataSource = window.BookingList();    
+            MyDBEntities context = new MyDBEntities();
+            bookingGridView.DataSource = window.BookingList(context);    
         }
 
         private void bookingGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -47,7 +49,9 @@ namespace day_away_planner.Views
                 if (dr == DialogResult.Yes)
                 {
                     int bookingID = (Int32)bookingGridView.Rows[e.RowIndex].Cells[1].Value;
-                    window.PayBooking(bookingID);  
+                    MyDBEntities bookingContext= new MyDBEntities();
+                    MyDBEntities clientContext= new MyDBEntities();
+                    window.PayBooking(bookingID, true, clientContext, bookingContext);  
                 }
             }
             else
@@ -86,7 +90,8 @@ namespace day_away_planner.Views
 
         private void applyFilters()
         {
-            bookingGridView.DataSource = window.BookingFilter(checkFilters());
+            MyDBEntities context = new MyDBEntities();
+            bookingGridView.DataSource = window.BookingFilter(checkFilters(), context);
             bookingGridView.Refresh();
         }
 

@@ -78,7 +78,7 @@ namespace day_away_planner_UnitTesting
             Assert.AreEqual(booking.BookingCancellationDate, new DateTime(2000, 4, 17));
         }
         [TestMethod]
-        public void TestGetAllClients()
+        public void TestGetAllBookings()
         {
             var context = new MyDBEntities();
             List<dynamic> bookingList = new List<dynamic>();

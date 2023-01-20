@@ -78,6 +78,10 @@
     <Compile Include="PresenterVenueTesting.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PresenterClientTesting.cs" />
+    <Compile Include="ViewBookingWindowTesting.cs" />
+    <Compile Include="ViewsActivityTesting.cs" />
+    <Compile Include="ViewsBookingTesting.cs" />
+    <Compile Include="ViewsInitialisationTesting.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

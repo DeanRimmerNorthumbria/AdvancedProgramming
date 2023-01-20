@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace day_away_planner.Views
 {
-    internal class BookingWindow : IBookingWindow
+    public class BookingWindow : IBookingWindow
     {
         private Presenter.Booking booking = new Presenter.Booking();
         public BookingWindow()
@@ -21,39 +21,34 @@ namespace day_away_planner.Views
 
         public Models.Activity BookingActivity { get; set; }
 
-        public List<dynamic> BookingList()
+        public List<dynamic> BookingList(MyDBEntities context)
         {
-            MyDBEntities DBcontext = new MyDBEntities();    
+            MyDBEntities DBcontext = context;    
             return booking.BookingList(DBcontext);
         }
 
-        public List<dynamic> BookingFilter(List<bool> filters)
+        public List<dynamic> BookingFilter(List<bool> filters, MyDBEntities context)
         {
-            MyDBEntities bookingContext = new MyDBEntities();
+            MyDBEntities bookingContext = context;
             return booking.BookingFilter(filters, bookingContext);
         }
 
-        public List<dynamic> BookingClientFilter(string clientName, string clientCompany)
+        public List<dynamic> BookingClientFilter(string clientName, string clientCompany, MyDBEntities context)
         {
-            MyDBEntities bookingContext = new MyDBEntities();
+            MyDBEntities bookingContext = context;
             return booking.BookingClientFilter(clientName, clientCompany, bookingContext);
         }
 
-        public void PayBooking(int bookingID)
+        public void PayBooking(int bookingID, bool confirmBooking, MyDBEntities clientContext, MyDBEntities bookingContext)
         {
-            MyDBEntities bookingContext = new MyDBEntities();
-            MyDBEntities clientContext = new MyDBEntities();
             Presenter.Booking bp = new Presenter.Booking();
-            bp.BookingToPay(bookingID, bookingContext, clientContext, true);
+            bp.BookingToPay(bookingID, bookingContext, clientContext, confirmBooking);
         }
 
-        public bool BookingCreate(Models.Client client, Models.Activity activity, Models.Venue venue, string date, string time, string cost, string extras)
+        public bool BookingCreate(Models.Client client, Models.Activity activity, Models.Venue venue, string date, string time, string cost, string extras, bool bookingCreate, MyDBEntities clientContext, MyDBEntities bookingContext)
         {
             Presenter.Booking bookingPresenter = new Presenter.Booking();
-            MyDBEntities bookingContext = new MyDBEntities();
-            MyDBEntities clientContext = new MyDBEntities();
-            bookingPresenter.BookingCreate(client, activity, venue, date, time, cost, extras, bookingContext, clientContext, true);
-            return true;
+            return bookingPresenter.BookingCreate(client, activity, venue, date, time, cost, extras, bookingContext, clientContext, bookingCreate);
         }
 
     }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using day_away_planner.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,7 @@ namespace day_away_planner.Views
         private bool isDateCorrect = false;
         private bool isTimeCorrect = false;
         private bool isExtraCostCorrect = true;
-        internal NewBooking(BookingWindow currentWindow)
+        public NewBooking(BookingWindow currentWindow)
         {
             this.window = currentWindow;
             InitializeComponent();
@@ -71,7 +72,9 @@ namespace day_away_planner.Views
             DialogResult dr = MessageBox.Show("Total Price: " + Convert.ToString(totalCost), "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dr == DialogResult.Yes)
             {
-                window.BookingCreate(window.BookingClient, window.BookingActivity, window.BookingVenue, textBox4.Text, textBox3.Text, Convert.ToString(totalCost), textBox6.Text);
+                MyDBEntities clientContext = new MyDBEntities();
+                MyDBEntities bookingContext= new MyDBEntities();
+                window.BookingCreate(window.BookingClient, window.BookingActivity, window.BookingVenue, textBox4.Text, textBox3.Text, Convert.ToString(totalCost), textBox6.Text, true, clientContext, bookingContext);
                 MessageBox.Show("Booking Created Confirmation will be sent out");
                 this.Close();
             }
