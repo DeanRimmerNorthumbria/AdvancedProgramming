@@ -1,4 +1,9 @@
-﻿using day_away_planner.Models;
+﻿//Ryan Chandler	w18009424@northumbria.ac.uk 
+//Dean Rimmer	w18029848@northumbria.ac.uk
+//Bhanu Prakash	w18029848@northumbria.ac.uk
+//Precious Chidiadi Nwachukwu	22007369@northumbria.ac.uk
+
+using day_away_planner.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,9 +27,9 @@ namespace day_away_planner.Presenter
         public string VenueLocation { get; set; }
         public int VenueCapacity { get; set; }
 
-        public List<Models.Venue> VenueList()
+        public List<Models.Venue> VenueList(MyDBEntities DbEntities)
         {
-            using (var context = new MyDBEntities())
+            using (var context = DbEntities)
             {
                 var venueList = context.Venues.ToList<Models.Venue>();
                 return venueList;

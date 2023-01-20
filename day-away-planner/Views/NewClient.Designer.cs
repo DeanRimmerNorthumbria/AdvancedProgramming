@@ -369,6 +369,7 @@
             this.Controls.Add(this.button1);
             this.Name = "NewClient";
             this.Text = "NewClient";
+            this.Load += new System.EventHandler(this.NewClient_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

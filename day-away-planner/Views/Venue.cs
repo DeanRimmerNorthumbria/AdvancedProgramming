@@ -1,5 +1,11 @@
-﻿using System;
+﻿using day_away_planner.Models;
+using System;
 using System.Collections.Generic;
+//Ryan Chandler	w18009424@northumbria.ac.uk 
+//Dean Rimmer	w18029848@northumbria.ac.uk
+//Bhanu Prakash	w18029848@northumbria.ac.uk
+//Precious Chidiadi Nwachukwu	22007369@northumbria.ac.uk
+
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -29,7 +35,8 @@ namespace day_away_planner.Views
 
         private void Venue_Load(object sender, EventArgs e)
         {
-            venues = venue.VenueList();
+            MyDBEntities DbEntities = new MyDBEntities();
+            venues = venue.VenueList(DbEntities);
             venueGridView.DataSource = venues;
         }
 

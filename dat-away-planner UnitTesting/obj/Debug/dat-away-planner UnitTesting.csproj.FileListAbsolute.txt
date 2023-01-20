@@ -1,0 +1,21 @@
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\dat-away-planner UnitTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\dat-away-planner UnitTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\dat-away-planner UnitTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\dat-away-planner UnitTesting\bin\Debug\Database.mdf
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\dat-away-planner UnitTesting\bin\Debug\Database_log.ldf
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\dat-away-planner UnitTesting\bin\Debug\dat-away-planner UnitTesting.dll
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\dat-away-planner UnitTesting\bin\Debug\dat-away-planner UnitTesting.pdb
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\dat-away-planner UnitTesting\bin\Debug\day-away-planner.exe
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\dat-away-planner UnitTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\dat-away-planner UnitTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\dat-away-planner UnitTesting\bin\Debug\EntityFramework.dll
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\dat-away-planner UnitTesting\bin\Debug\day-away-planner.pdb
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\dat-away-planner UnitTesting\bin\Debug\day-away-planner.exe.config
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\dat-away-planner UnitTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\dat-away-planner UnitTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\dat-away-planner UnitTesting\bin\Debug\EntityFramework.xml
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\dat-away-planner UnitTesting\obj\Debug\dat-away-planner UnitTesting.csproj.AssemblyReference.cache
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\dat-away-planner UnitTesting\obj\Debug\dat-away-planner UnitTesting.csproj.CoreCompileInputs.cache
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\dat-away-planner UnitTesting\obj\Debug\dat-away-planner UnitTesting.csproj.CopyComplete
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\dat-away-planner UnitTesting\obj\Debug\dat-away-planner UnitTesting.dll
+C:\Users\Bhanu Prakash Reddy\Desktop\AP\AdProg\AP\dat-away-planner UnitTesting\obj\Debug\dat-away-planner UnitTesting.pdb

@@ -1,10 +1,15 @@
-﻿using System;
+﻿//Ryan Chandler	w18009424@northumbria.ac.uk 
+//Dean Rimmer	w18029848@northumbria.ac.uk
+//Bhanu Prakash	w18029848@northumbria.ac.uk
+//Precious Chidiadi Nwachukwu	22007369@northumbria.ac.uk
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using day_away_planner.Models;
 
 namespace day_away_planner.Presenter
 {
@@ -19,11 +24,11 @@ namespace day_away_planner.Presenter
         DateTime BookingEventDate { get; set; }
         bool BookingCancellation { get; set; }
         DateTime BookingCancellationDate { get; set; }
-        List<dynamic> BookingList();
-        List<dynamic> BookingFilter(List<bool> filters);
-        bool BookingCreate(Models.Client client, Models.Activity activity, Models.Venue venue, string date, string time, string cost, string extras);
-        List<dynamic> BookingClientFilter(string clientName, string clientCompany);
-        void BookingToPay(int bookingID);
+        List<dynamic> BookingList(MyDBEntities DBcontext);
+        List<dynamic> BookingFilter(List<bool> filter, MyDBEntities bookingContext);
+        bool BookingCreate(Models.Client client, Models.Activity activity, Models.Venue venue, string date, string time, string cost, string extras, MyDBEntities bookingContext, MyDBEntities clientContext, bool createBooking);
+        List<dynamic> BookingClientFilter(string clientName, string clientCompany, MyDBEntities bookingContext);
+        void BookingToPay(int bookingID, MyDBEntities bookingContext, MyDBEntities clientContext, bool confirmBooking);
     }
 }
 

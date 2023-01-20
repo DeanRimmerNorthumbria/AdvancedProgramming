@@ -1,0 +1,32 @@
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\bin\Debug\Database.mdf
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\bin\Debug\Database_log.ldf
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\bin\Debug\dat-away-planner UnitTesting.dll.config
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\bin\Debug\dat-away-planner UnitTesting.dll
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\bin\Debug\dat-away-planner UnitTesting.pdb
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\bin\Debug\Castle.Core.dll
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\bin\Debug\day-away-planner.exe
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\bin\Debug\EntityFramework.dll
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\bin\Debug\Moq.dll
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\bin\Debug\day-away-planner.pdb
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\bin\Debug\day-away-planner.exe.config
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\bin\Debug\Castle.Core.xml
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\bin\Debug\EntityFramework.xml
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\bin\Debug\Moq.xml
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\obj\Debug\dat-away-planner_UnitTesting.csproj.AssemblyReference.cache
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\obj\Debug\dat-away-planner_UnitTesting.csproj.CoreCompileInputs.cache
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\obj\Debug\dat-away-planner_UnitTesting.csproj.CopyComplete
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\obj\Debug\dat-away-planner UnitTesting.dll
+C:\Users\Dean\source\repos\AdvancedProgramming\dat-away-planner UnitTesting\obj\Debug\dat-away-planner UnitTesting.pdb
